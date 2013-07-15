@@ -1,6 +1,6 @@
 {
-    "name": "zendframework/skeleton-application",
-    "description": "Skeleton Application for ZF2",
+    "name": "zendframework/zf-api-first-app",
+    "description": "Skeleton Application for ZF Api First Development",
     "license": "BSD-3-Clause",
     "keywords": [
         "framework",
