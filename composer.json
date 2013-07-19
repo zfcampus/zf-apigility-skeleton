@@ -7,7 +7,8 @@
         "zf2"
     ],
     "repositories": [
-        { "type": "composer", "url": "http://packages-zfcampus.rhcloud.com/" } 
+        { "type": "composer", "url": "http://packages-zfcampus.rhcloud.com/" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zftool.git" }
     ],
     "minimum-stability": "dev",
     "homepage": "http://framework.zend.com/",

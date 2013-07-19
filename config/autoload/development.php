@@ -6,7 +6,7 @@ return array(
             'zftool-diagnostics' => array(
                 'type'  => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
-                    'route' => '/dev/diagnostics',
+                    'route' => '/zftool/diagnostics',
                     'defaults' => array(
                         'controller' => 'ZFTool\Controller\Diagnostics',
                         'action'     => 'run'
