@@ -11,7 +11,7 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": ">2.2.0rc1",
         "rwoverdijk/assetmanager": "dev-master",
-        "zfcampus/zfapifirst": "dev-master",
+        "zfcampus/zfapifirst": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
