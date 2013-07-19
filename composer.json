@@ -1,5 +1,5 @@
 {
-    "name": "zendframework/apifirstskeleton",
+    "name": "zfcampus/apifirstskeleton",
     "description": "Skeleton Application for ZF Api First Development",
     "license": "BSD-3-Clause",
     "keywords": [
