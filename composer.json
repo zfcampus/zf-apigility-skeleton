@@ -7,7 +7,7 @@
         "zf2"
     ],
     "repositories": [
-        { "type": "composer", "url": "hhttp://packages-zfcampus.rhcloud.com/" } 
+        { "type": "composer", "url": "http://packages-zfcampus.rhcloud.com/" } 
     ],
     "minimum-stability": "dev",
     "homepage": "http://framework.zend.com/",
