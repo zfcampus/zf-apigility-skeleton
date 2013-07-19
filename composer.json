@@ -1,5 +1,5 @@
 {
-    "name": "zendframework/zf-api-first-app",
+    "name": "zendframework/apifirstskeleton",
     "description": "Skeleton Application for ZF Api First Development",
     "license": "BSD-3-Clause",
     "keywords": [
@@ -9,6 +9,12 @@
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": ">2.2.0rc1"
+        "zendframework/zendframework": ">2.2.0rc1",
+        "rwoverdijk/assetmanager": "dev-master",
+        "zfcampus/zfapifirst": "dev-master",
+    },
+    "require-dev": {
+        "zendframework/zftool": "dev-master",
+        "zfcampus/zfapifirstdev": "dev-master"
     }
 }

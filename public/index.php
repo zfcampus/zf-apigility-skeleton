@@ -13,5 +13,20 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
 // Setup autoloading
 include 'vendor/autoload.php';
 
+// determine mode, we at least need this for merging DEV time tools
+if (!defined('APPLICATION_MODE')) {
+    define('APPLICATION_MODE', (getenv('APPLICATION_MODE') ? getenv('APPLICATION_MODE') : 'production'));
+}
+
+if (!defined('APPLICATION_PATH')) {
+    define('APPLICATION_PATH', realpath(__DIR__ . '/../'));
+}
+
+$appConfig = require 'config/application.config.php';
+
+if (APPLICATION_MODE == 'development') {
+    $appConfig = Zend\Stdlib\ArrayUtils::merge($appConfig, require 'config/development.config.php');
+}
+
 // Run the application!
-Zend\Mvc\Application::init(require 'config/application.config.php')->run();
+Zend\Mvc\Application::init($appConfig)->run();
