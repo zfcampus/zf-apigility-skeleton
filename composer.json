@@ -6,6 +6,9 @@
         "framework",
         "zf2"
     ],
+    "repositories": [
+        { "type": "composer", "url": "hhttp://packages-zfcampus.rhcloud.com/" } 
+    ],
     "minimum-stability": "dev",
     "homepage": "http://framework.zend.com/",
     "require": {
@@ -16,6 +19,6 @@
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
-        "zfcampus/zfapifirstdev": "dev-master"
+        "zfcampus/zfapifirstadmin": "dev-master"
     }
 }
