@@ -5,11 +5,14 @@ return array(
     'modules' => array(
         'Application',
         'AssetManager',
+        'ZF\ApiProblem',
+        'ZF\Hal',
+        'ZF\ContentNegotiation',
+        'ZF\Rest',
+        'ZF\Rpc',
         'ZFApiFirst',
         'ZFApiFirstExample',
         'ZFApiFirstRestExample',
-        'ZF\ContentNegotiation',
-        'ZFRpc'
     ),
     // This should be an array of paths in which modules reside.
     // If a string key is provided, the listener will consider that a module
