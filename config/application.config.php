@@ -7,7 +7,7 @@ return array(
         'AssetManager',
         'ZFApiFirst',
         'ZFApiFirstExample',
-        'ZFContentNegotiation',
+        'ZF\ContentNegotiation',
         'ZFRpc'
     ),
     // This should be an array of paths in which modules reside.
