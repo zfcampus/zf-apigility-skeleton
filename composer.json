@@ -7,8 +7,16 @@
         "zf2"
     ],
     "repositories": [
-        { "type": "composer", "url": "http://packages-zfcampus.rhcloud.com/" },
-        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zftool.git" }
+        { "type": "composer", "url": "https://packages.zendframework.com/" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfangular.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapifirstadmin.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapifirstexample.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapifirst.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapiproblem.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfcontentnegotiation.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfhal.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfrest.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfrpc.git" }
     ],
     "minimum-stability": "dev",
     "homepage": "http://framework.zend.com/",
