@@ -26,7 +26,8 @@
         "zendframework/zendframework": ">2.2.0rc1",
         "rwoverdijk/assetmanager": "dev-master",
         "zfcampus/zf-api-first": "dev-master",
-        "zfcampus/zf-api-first-example": "dev-master"
+        "zfcampus/zf-api-first-example": "dev-master",
+        "zfcampus/zf-api-first-rest-example": "dev-master"
         
     },
     "require-dev": {
