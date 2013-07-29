@@ -16,12 +16,12 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": ">2.2.0rc1",
         "rwoverdijk/assetmanager": "dev-master",
-        "zfcampus/zfapifirst": "dev-master",
-        "zfcampus/zfapifirstexample": "dev-master"
+        "zfcampus/zf-api-first": "dev-master",
+        "zfcampus/zf-api-firstexample": "dev-master"
         
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
-        "zfcampus/zfapifirstadmin": "dev-master"
+        "zfcampus/zf-api-first-admin": "dev-master"
     }
 }
