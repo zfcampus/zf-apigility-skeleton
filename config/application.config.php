@@ -7,6 +7,7 @@ return array(
         'AssetManager',
         'ZFApiFirst',
         'ZFApiFirstExample',
+        'ZFApiFirstRestExample',
         'ZF\ContentNegotiation',
         'ZFRpc'
     ),

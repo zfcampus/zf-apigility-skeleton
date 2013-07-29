@@ -11,6 +11,7 @@
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfangular.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapifirstadmin.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapifirstexample.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapifirstrestexample.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapifirst.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapiproblem.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfcontentnegotiation.git" },
