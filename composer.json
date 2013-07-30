@@ -33,5 +33,9 @@
     "require-dev": {
         "zendframework/zftool": "dev-master",
         "zfcampus/zf-api-first-admin": "dev-master"
+    },
+    "scripts": {
+        "post-package-install": "ZFApiFirstRestExample\\Installer::install",
+        "post-create-project-cmd": "ZFApiFirstRestExample\\Installer::install"
     }
 }
