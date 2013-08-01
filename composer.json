@@ -15,6 +15,7 @@
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapifirst.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapiproblem.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfcontentnegotiation.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfversioning.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfhal.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfrest.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfrpc.git" }
@@ -23,7 +24,8 @@
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": ">2.2.0rc1",
+        "zendframework/zendframework": ">=2.3.0dev",
+        "zendframework/zend-developer-tools": "dev-master",
         "rwoverdijk/assetmanager": "dev-master",
         "zfcampus/zf-api-first": "dev-master",
         "zfcampus/zf-api-first-example": "dev-master",
