@@ -12,7 +12,9 @@ return array(
         'ZF\Rest',
         'ZF\Rpc',
         'ZFApiFirst',
+        'ZFApiFirstAdmin',
         'ZFApiFirstExample',
+        'ZF\Configuration',
         'ZFApiFirstRestExample',
     ),
     // This should be an array of paths in which modules reside.
