@@ -25,7 +25,7 @@
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": ">=2.3.0dev",
+        "zendframework/zendframework": "dev-develop",
         "zendframework/zend-developer-tools": "dev-master",
         "rwoverdijk/assetmanager": "dev-master",
         "zfcampus/zf-api-first": "dev-master",
