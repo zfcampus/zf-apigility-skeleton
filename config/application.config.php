@@ -4,7 +4,6 @@ return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
         'Application',
-        'ZendDeveloperTools',
         'AssetManager',
         'ZF\ApiProblem',
         'ZF\Hal',
@@ -13,9 +12,7 @@ return array(
         'ZF\Rpc',
         'ZFApiFirst',
         'ZFApiFirstAdmin',
-        'ZFApiFirstExample',
         'ZF\Configuration',
-        'ZFApiFirstRestExample',
     ),
     // This should be an array of paths in which modules reside.
     // If a string key is provided, the listener will consider that a module
