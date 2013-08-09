@@ -19,27 +19,24 @@
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfversioning.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfhal.git" },
         { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfrest.git" },
-        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfrpc.git" }
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfrpc.git" },
+        { "type": "vcs", "url": "git@bitbucket.org:zendframework/zfapifirstwelcome.git" }
     ],
     "minimum-stability": "dev",
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "dev-develop",
-        "zendframework/zend-developer-tools": "dev-master",
         "rwoverdijk/assetmanager": "dev-master",
         "zfcampus/zf-api-first": "dev-master",
-        "zfcampus/zf-api-first-example": "dev-master",
-        "zfcampus/zf-configuration": "dev-master",
-        "zfcampus/zf-api-first-rest-example": "dev-master"
-        
+        "zfcampus/zf-configuration": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
-        "zfcampus/zf-api-first-admin": "dev-master"
-    },
-    "scripts": {
-        "post-package-install": "ZFApiFirstRestExample\\Installer::install",
-        "post-create-project-cmd": "ZFApiFirstRestExample\\Installer::install"
+        "zendframework/zend-developer-tools": "dev-master",
+        "zfcampus/zf-api-first-admin": "dev-master",
+        "zfcampus/zf-api-first-rest-example": "dev-master",
+        "zfcampus/zf-api-first-example": "dev-master",
+        "zfcampus/zf-api-first-welcome": "dev-master"
     }
 }
