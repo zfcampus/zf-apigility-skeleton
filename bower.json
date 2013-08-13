@@ -1,0 +1,11 @@
+{
+    "name": "zf-api-first-skeleton",
+    "version": "0.0.1",
+    "ignore": [
+        "**/.*"
+    ],
+    "dependencies": {
+        "bootstrap": "3.0.0-rc1",
+        "font-awesome": "~3.2.1"
+    }
+}

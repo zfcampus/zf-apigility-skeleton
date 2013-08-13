@@ -7,38 +7,32 @@
     echo $this->headTitle('ZF API First Application');
     echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
     echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
-    				->appendStylesheet('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css');
+        ->appendStylesheet('/css/main.css');
     echo $this->headScript()
-    				->prependFile('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js')
-    				->prependFile('//code.jquery.com/jquery.js');
+        ->prependFile('/js/bootstrap.min.js')
+        ->prependFile('/js/jquery.min.js');
 ?>
         <style>
             body {
-                padding-top: 65px;
+                padding-top: 80px;
             }
         </style>
 
     </head>
     <body>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath() . '/img/zfapi_logo.png' ?>"></a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <?php if (class_exists('ZFApiFirstAdmin\Module', false)): ?>
-                            <li class="active"><a href="/admin">Setup</a></li>
-                            <?php endif; ?>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
+        <div class="navbar navbar-inverse navbar-fixed-top za1-nav">
+            <div class="container">
+                <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath() . '/img/zfapi_logo.png' ?>"></a>
+                <ul class="nav navbar-nav">
+                    <?php if (class_exists('ZFApiFirstAdmin\Module', false)): ?>
+                        <li class="active"><a href="/admin">Setup</a></li>
+                    <?php endif; ?>
+                </ul>
             </div>
         </div>
+
+
+
         <div class="container">
             <?php echo $this->content; ?>
             <hr>
