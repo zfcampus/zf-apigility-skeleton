@@ -36,4 +36,16 @@ class Module
             ),
         );
     }
+
+    public function getConsoleBanner()
+    {
+        return 'Zend Framework API First preview release';
+    }
+
+    public function getConsoleUsage()
+    {
+        return array(
+            'development (disable|enable)' => 'Disable or enable development mode',
+        );
+    }
 }
