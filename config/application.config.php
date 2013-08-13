@@ -4,14 +4,15 @@ return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
         'Application',
+
+	'ZFApiFirst',
+	'ZFApiFirstWelcome',
         'AssetManager',
         'ZF\ApiProblem',
         'ZF\Hal',
         'ZF\ContentNegotiation',
         'ZF\Rest',
         'ZF\Rpc',
-        'ZFApiFirst',
-        'ZFApiFirstAdmin',
         'ZF\Configuration',
     ),
     // This should be an array of paths in which modules reside.
