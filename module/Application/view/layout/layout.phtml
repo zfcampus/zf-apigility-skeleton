@@ -24,7 +24,7 @@
             <div class="container">
                 <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath() . '/img/zfapi_logo.png' ?>"></a>
                 <ul class="nav navbar-nav">
-                    <?php if (class_exists('ZFApiFirstAdmin\Module', false)): ?>
+                    <?php if (class_exists('ZF\ApiFirstAdmin\Module', false)): ?>
                         <li class="active"><a href="/admin">Setup</a></li>
                     <?php endif; ?>
                 </ul>

@@ -3,7 +3,7 @@ return array(
     // Development time modules
     'modules' => array(
         'ZFTool',
-        'ZFApiFirstAdmin',
+        'ZF\ApiFirstAdmin',
         'ZendDeveloperTools',
         'ZFApiFirstExample',
         'ZFApiFirstRestExample',
