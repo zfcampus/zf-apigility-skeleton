@@ -5,8 +5,7 @@ return array(
         'ZFTool',
         'ZF\ApiFirstAdmin',
         'ZendDeveloperTools',
-        'ZFApiFirstExample',
-        'ZFApiFirstRestExample',
+        'ZF\ApiFirstExample',
     ),
     // development time configuration globbing
     'module_listener_options' => array(

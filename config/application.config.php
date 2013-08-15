@@ -5,7 +5,7 @@ return array(
     'modules' => array(
         'Application',
         'ZF\ApiFirst',
-        'ZFApiFirstWelcome',
+        'ZF\ApiFirstWelcome',
         'AssetManager',
         'ZF\ApiProblem',
         'ZF\Hal',
