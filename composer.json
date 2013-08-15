@@ -23,7 +23,6 @@
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
         "zfcampus/zf-api-first-admin": "dev-master",
-        "zfcampus/zf-api-first-rest-example": "dev-master",
         "zfcampus/zf-api-first-example": "dev-master",
         "zfcampus/zf-api-first-welcome": "dev-master"
     }
