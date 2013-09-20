@@ -1,16 +1,16 @@
-zf-api-first-skeleton
-=====================
+Apigility Skeleton Application
+==============================
 
 Installation
 ------------
 
 ```bash
     curl -s https://getcomposer.org/installer | php --
-    php composer.phar create-project -sdev --repository-url="http://packages-zfcampus.rhcloud.com/" zfcampus/zf-api-first-skeleton path/to/install
+    php composer.phar create-project -sdev --repository-url="http://packages-zfcampus.rhcloud.com/" zfcampus/zf-apigility-skeleton path/to/install
     cd path/to/install
     php public/index.php development enable # put the skeleton in development mode
     mkdir -p data/db/
-    cp vendor/zfcampus/zf-api-first-example/db/status.db data/db/ # copy the example API database
+    cp vendor/zfcampus/zf-apigility-example/db/status.db data/db/ # copy the example API database
 ```
 
 Now, fire it up! Do one of the following:
