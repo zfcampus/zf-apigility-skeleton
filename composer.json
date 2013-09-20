@@ -13,7 +13,7 @@
         { "type": "composer", "url": "http://packages-zfcampus.rhcloud.com" }
     ],
     "minimum-stability": "dev",
-    "homepage": "http://framework.zend.com/",
+    "homepage": "http://apigility.org/",
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "dev-develop",
