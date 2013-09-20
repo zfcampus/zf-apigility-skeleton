@@ -1,8 +1,10 @@
 {
     "name": "zfcampus/zf-apigility-skeleton",
-    "description": "Skeleton Application for Apigility by ZF",
+    "description": "Skeleton Application for Apigility",
     "license": "BSD-3-Clause",
     "keywords": [
+        "api",
+        "apigility",
         "framework",
         "zf2"
     ],
