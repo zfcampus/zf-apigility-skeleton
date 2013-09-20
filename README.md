@@ -10,7 +10,7 @@ Installation
     cd path/to/install
     php public/index.php development enable # put the skeleton in development mode
     mkdir -p data/db/
-    cp vendor/zfcampus/zf-apigility-example/db/status.db data/db/ # copy the example API database
+    cp vendor/zfcampus/zf-apigility-example/data/status.db data/db/ # copy the example API database
 ```
 
 Now, fire it up! Do one of the following:
