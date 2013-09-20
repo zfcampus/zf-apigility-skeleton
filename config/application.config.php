@@ -4,8 +4,8 @@ return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
         'Application',
-        'ZF\ApiFirst',
-        'ZF\ApiFirstWelcome',
+        'ZF\Apigility',
+        'ZF\Apigility\Welcome',
         'AssetManager',
         'ZF\ApiProblem',
         'ZF\Hal',
