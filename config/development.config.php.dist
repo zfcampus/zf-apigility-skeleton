@@ -3,8 +3,8 @@ return array(
     // Development time modules
     'modules' => array(
         'ZFTool',
-        'ZF\ApiFirstAdmin',
-        'ZF\ApiFirstExample',
+        'ZF\Apigility\Admin',
+        'ZF\Apigiltiy\Example',
     ),
     // development time configuration globbing
     'module_listener_options' => array(

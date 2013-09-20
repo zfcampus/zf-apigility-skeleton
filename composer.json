@@ -1,6 +1,6 @@
 {
-    "name": "zfcampus/zf-api-first-skeleton",
-    "description": "Skeleton Application for ZF Api First Development",
+    "name": "zfcampus/zf-apigility-skeleton",
+    "description": "Skeleton Application for Apigility by ZF",
     "license": "BSD-3-Clause",
     "keywords": [
         "framework",
@@ -16,14 +16,14 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": "dev-develop",
         "rwoverdijk/assetmanager": "dev-master",
-        "zfcampus/zf-api-first": "dev-master",
+        "zfcampus/zf-apigility": "dev-master",
         "zfcampus/zf-configuration": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
-        "zfcampus/zf-api-first-admin": "dev-master",
-        "zfcampus/zf-api-first-example": "dev-master",
-        "zfcampus/zf-api-first-welcome": "dev-master"
+        "zfcampus/zf-apigility-admin": "dev-master",
+        "zfcampus/zf-apigility-example": "dev-master",
+        "zfcampus/zf-apigility-welcome": "dev-master"
     }
 }
