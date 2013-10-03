@@ -6,7 +6,7 @@ Installation
 
 ```bash
     curl -s https://getcomposer.org/installer | php --
-    php composer.phar create-project -sdev --repository-url="http://packages-zfcampus.rhcloud.com/" zfcampus/zf-apigility-skeleton path/to/install
+    php composer.phar create-project -sdev --repository-url="https://packages.zendframework.com/" zfcampus/zf-apigility-skeleton path/to/install
     cd path/to/install
     php public/index.php development enable # put the skeleton in development mode
     mkdir -p data/db/
