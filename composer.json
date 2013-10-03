@@ -1,6 +1,7 @@
 {
     "name": "zfcampus/zf-apigility-skeleton",
     "description": "Skeleton Application for Apigility",
+    "type": "library",
     "license": "BSD-3-Clause",
     "keywords": [
         "api",
@@ -8,12 +9,17 @@
         "framework",
         "zf2"
     ],
+    "homepage": "http://apigility.org/",
+    "support": {
+        "email": "apigility-users@zend.com",
+        "irc": "irc://irc.freenode.net/apigility",
+        "source": "https://github.com/zfcampus/zf-apigility-skeleton",
+        "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
+    },
     "repositories": [
-        { "type": "composer", "url": "https://packages.zendframework.com" },
-        { "type": "composer", "url": "http://packages-zfcampus.rhcloud.com" }
+        { "type": "composer", "url": "https://packages.zendframework.com" }
     ],
     "minimum-stability": "dev",
-    "homepage": "http://apigility.org/",
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "dev-develop",
