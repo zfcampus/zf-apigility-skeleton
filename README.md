@@ -4,13 +4,23 @@ Apigility Skeleton Application
 Installation
 ------------
 
-```bash
-    curl -s https://getcomposer.org/installer | php --
-    php composer.phar create-project -sdev --repository-url="https://packages.zendframework.com/" zfcampus/zf-apigility-skeleton path/to/install
-    cd path/to/install
-    php public/index.php development enable # put the skeleton in development mode
-    mkdir -p data/db/
-    cp vendor/zfcampus/zf-apigility-example/data/status.db data/db/ # copy the example API database
+Install [Composer](http://http://getcomposer.org/)
+```
+curl -s https://getcomposer.org/installer | php --
+```
+Use Composer to create a new project
+```
+php composer.phar create-project -sdev --repository-url="https://packages.zendframework.com/" zfcampus/zf-apigility-skeleton path/to/install
+```
+Put the skeleton in development mode
+```
+cd path/to/install
+php public/index.php development enable
+```
+Copy the example API database
+```
+mkdir -p data/db/
+cp vendor/zfcampus/zf-apigility-example/data/status.db data/db/
 ```
 
 Now, fire it up! Do one of the following:
@@ -22,9 +32,9 @@ Now, fire it up! Do one of the following:
 
 In the latter case, do the following:
 
-```bash
-    cd path/to/install
-    php -S 0.0.0.0:8080 -t public/ public/index.php
+```
+cd path/to/install
+php -S 0.0.0.0:8080 -t public/ public/index.php
 ```
 
 You can then visit the site at http://localhost:8080/ - which will bring up a
