@@ -15,6 +15,12 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
     return false;
 }
 
+if (!file_exists('vendor/autoload.php')) {
+    throw new RuntimeException(
+        'Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.'
+    );
+}
+
 // Setup autoloading
 include 'vendor/autoload.php';
 
