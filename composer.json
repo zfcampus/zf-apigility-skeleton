@@ -24,7 +24,7 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": "dev-develop",
         "rwoverdijk/assetmanager": "dev-master",
-        "zfcampus/zf-apigility": "dev-master",
+        "zfcampus/zf-apigility": "dev-feature/mvc-auth-integration",
         "zfcampus/zf-configuration": "dev-master"
     },
     "require-dev": {
