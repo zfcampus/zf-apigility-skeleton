@@ -17,6 +17,7 @@
         "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
     },
     "repositories": [
+        { "type": "vcs", "url": "git://github.com/zfcampus/zf-api-problem.git" },
         { "type": "vcs", "url": "git://github.com/zfcampus/zf-mvc-auth.git" },
         { "type": "vcs", "url": "git://github.com/zfcampus/zf-apigility.git" },
         { "type": "vcs", "url": "git://github.com/zfcampus/zf-apigility-admin.git" },
