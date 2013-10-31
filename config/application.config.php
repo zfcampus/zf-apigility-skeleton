@@ -12,6 +12,7 @@ return array(
         'ZF\Apigility\Welcome',
         'AssetManager',
         'ZF\ApiProblem',
+        'ZF\MvcAuth',
         'ZF\Hal',
         'ZF\ContentNegotiation',
         'ZF\Rest',
