@@ -16,9 +16,6 @@
         "source": "https://github.com/zfcampus/zf-apigility-skeleton",
         "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
     },
-    "repositories": [
-        { "type": "composer", "url": "https://packages.zendframework.com" }
-    ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
