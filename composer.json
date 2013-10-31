@@ -17,10 +17,6 @@
         "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
     },
     "repositories": [
-        { "type": "vcs", "url": "git://github.com/zfcampus/zf-api-problem.git" },
-        { "type": "vcs", "url": "git://github.com/zfcampus/zf-mvc-auth.git" },
-        { "type": "vcs", "url": "git://github.com/zfcampus/zf-apigility.git" },
-        { "type": "vcs", "url": "git://github.com/zfcampus/zf-apigility-admin.git" },
         { "type": "composer", "url": "https://packages.zendframework.com" }
     ],
     "minimum-stability": "dev",
@@ -28,13 +24,13 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": "dev-develop",
         "rwoverdijk/assetmanager": "dev-master",
-        "zfcampus/zf-apigility": "dev-feature/mvc-auth-integration",
+        "zfcampus/zf-apigility": "dev-master",
         "zfcampus/zf-configuration": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
-        "zfcampus/zf-apigility-admin": "dev-feature/mcv-auth-integration",
+        "zfcampus/zf-apigility-admin": "dev-master",
         "zfcampus/zf-apigility-welcome": "dev-master"
     }
 }
