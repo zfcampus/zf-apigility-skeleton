@@ -46,14 +46,11 @@ dependencies. Assuming you already have Composer:
 
 ### All methods
 
-Once you have the basic installation, you need to put it in development mode,
-and add the example API's database:
+Once you have the basic installation, you need to put it in development mode:
 
 ```bash
     cd path/to/install
     php public/index.php development enable # put the skeleton in development mode
-    mkdir -p data/db/
-    cp vendor/zfcampus/zf-apigility-example/data/status.db data/db/ # copy the example API database
 ```
 
 Now, fire it up! Do one of the following:
