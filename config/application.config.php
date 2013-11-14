@@ -13,6 +13,7 @@ return array(
         'AssetManager',
         'ZF\ApiProblem',
         'ZF\MvcAuth',
+        'ZF\OAuth2',
         'ZF\Hal',
         'ZF\ContentNegotiation',
         'ZF\Rest',
