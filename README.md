@@ -8,9 +8,9 @@ Installation
 
 Grab the latest release via the [Apigility website](http://apigility.org/)
 and/or the [releases page](https://github.com/zfcampus/zf-apigility-skeleton/releases).
-At the time of this writing, that URI is:
+The URI is:
 
-- https://github.com/zfcampus/zf-apigility-skeleton/releases/download/0.6.0/zf-apigility-skeleton.tgz
+- https://github.com/zfcampus/zf-apigility-skeleton/releases/download/0.7.0/zf-apigility-skeleton.tgz
 
 Untar it:
 
