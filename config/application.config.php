@@ -16,6 +16,7 @@ return array(
         'ZF\OAuth2',
         'ZF\Hal',
         'ZF\ContentNegotiation',
+        'ZF\ContentValidation',
         'ZF\Rest',
         'ZF\Rpc',
         'ZF\Configuration',
