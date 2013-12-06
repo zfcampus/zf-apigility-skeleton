@@ -15,7 +15,7 @@ At the time of this writing, that URI is:
 Untar it:
 
 ```bash
-    tar xzf zf-apigility-skeleton.tgz
+tar xzf zf-apigility-skeleton.tgz
 ```
 
 ### Via Composer (create-project)
@@ -24,8 +24,8 @@ You can use the `create-project` command from [Composer](http://getcomposer.org/
 to create the project in one go:
 
 ```bash
-    curl -s https://getcomposer.org/installer | php --
-    php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
+curl -s https://getcomposer.org/installer | php --
+php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
 ```
 
 ### Via Git (clone)
@@ -33,15 +33,15 @@ to create the project in one go:
 First, clone the repository:
 
 ```bash
-    git clone https://github.com/zfcampus/zf-apigility-skeleton.git # optionally, specify the directory in which to clone
-    cd path/to/install
+git clone https://github.com/zfcampus/zf-apigility-skeleton.git # optionally, specify the directory in which to clone
+cd path/to/install
 ```
 
 At this point, you need to use [Composer](https://getcomposer.org/) to install
 dependencies. Assuming you already have Composer:
 
 ```bash
-    composer.phar install
+composer.phar install
 ```
 
 ### All methods
@@ -49,8 +49,8 @@ dependencies. Assuming you already have Composer:
 Once you have the basic installation, you need to put it in development mode:
 
 ```bash
-    cd path/to/install
-    php public/index.php development enable # put the skeleton in development mode
+cd path/to/install
+php public/index.php development enable # put the skeleton in development mode
 ```
 
 Now, fire it up! Do one of the following:
@@ -63,8 +63,8 @@ Now, fire it up! Do one of the following:
 In the latter case, do the following:
 
 ```bash
-    cd path/to/install
-    php -S 0:8080 -t public/ public/index.php
+cd path/to/install
+php -S 0:8080 -t public/ public/index.php
 ```
 
 You can then visit the site at http://localhost:8080/ - which will bring up a
