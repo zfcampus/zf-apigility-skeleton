@@ -16,18 +16,31 @@
         "source": "https://github.com/zfcampus/zf-apigility-skeleton",
         "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
     },
-    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "dev-develop",
-        "rwoverdijk/assetmanager": "dev-master",
-        "zfcampus/zf-apigility": "dev-master",
-        "zfcampus/zf-configuration": "dev-master"
+        "bshaffer/oauth2-server-php": "dev-develop",
+        "rwoverdijk/assetmanager": "~1.3",
+        "zendframework/zendframework": "~2.3-dev",
+        "zfcampus/zf-apigility": "~1.0-dev",
+        "zfcampus/zf-api-problem": "~1.0-dev",
+        "zfcampus/zf-content-negotiation": "~1.0-dev",
+        "zfcampus/zf-content-validation": "~1.0-dev",
+        "zfcampus/zf-hal": "~1.0-dev",
+        "zfcampus/zf-mvc-auth": "~1.0-dev",
+        "zfcampus/zf-oauth2": "~1.0-dev",
+        "zfcampus/zf-rest": "~1.0-dev",
+        "zfcampus/zf-rpc": "~1.0-dev",
+        "zfcampus/zf-versioning": "~1.0-dev"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
-        "zfcampus/zf-apigility-admin": "dev-master",
-        "zfcampus/zf-apigility-welcome": "dev-master"
+        "zfcampus/zf-apigility-admin": "~1.0-dev",
+        "zfcampus/zf-apigility-welcome": "~1.0-dev"
     }
 }
