@@ -19,7 +19,6 @@ return array(
         'ZF\ContentValidation',
         'ZF\Rest',
         'ZF\Rpc',
-        'ZF\Configuration',
         'ZF\Versioning',
     ),
     // This should be an array of paths in which modules reside.
