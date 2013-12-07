@@ -28,7 +28,6 @@
         "zendframework/zendframework": "~2.3-dev",
         "zfcampus/zf-apigility": "~1.0-dev",
         "zfcampus/zf-api-problem": "~1.0-dev",
-        "zfcampus/zf-configuration": "~1.0-dev",
         "zfcampus/zf-content-negotiation": "~1.0-dev",
         "zfcampus/zf-content-validation": "~1.0-dev",
         "zfcampus/zf-hal": "~1.0-dev",
@@ -42,6 +41,7 @@
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
         "zfcampus/zf-apigility-admin": "~1.0-dev",
+        "zfcampus/zf-configuration": "~1.0-dev",
         "zfcampus/zf-apigility-welcome": "~1.0-dev"
     }
 }
