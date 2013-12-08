@@ -15,7 +15,7 @@ class DevelopmentModeController extends AbstractActionController
     public function setEventManager(EventManagerInterface $events)
     {
         parent::setEventManager($events);
-        $events->attach('dispatch', function($e) {
+        $events->attach('dispatch', function ($e) {
             $request = $e->getRequest();
             if (!$request instanceof ConsoleRequest) {
                 throw new \RuntimeException(sprintf(
@@ -33,17 +33,41 @@ class DevelopmentModeController extends AbstractActionController
             // nothing to do
             return "Already in development mode!\n";
         }
+
+        $return = "Copying config/development.config.php.dist to config/development.config.php\n";
         copy('config/development.config.php.dist', 'config/development.config.php');
-        return "You are now in development mode.\n";
+
+        if (!file_exists('config/autoload/development.local.php')) {
+            $return .= "Copying config/autoload/global-development.php to config/autoload/development.local.php\n";
+            copy('config/autoload/global-development.php', 'config/autoload/development.local.php');
+        }
+
+        $return .- "You are now in development mode.\n";
+        return $return;
     }
 
     public function disableAction()
     {
-        if (!file_exists('config/development.config.php')) {
+        if (!file_exists('config/development.config.php')
+            && !file_exists('config/autoload/development.local.php')
+        ) {
             // nothing to do
             return "Development mode was already disabled.\n";
         }
-        unlink('config/development.config.php');
-        return "Development mode is now disabled.\n";
+
+        $return = '';
+
+        if (file_exists('config/development.config.php')) {
+            $return .= "Removing config/development.config.php\n";
+            unlink('config/development.config.php');
+        }
+
+        if (file_exists('config/autoload/development.local.php')) {
+            $return .= "Removing config/autoload/development.local.php\n";
+            unlink('config/autoload/development.local.php');
+        }
+
+        $return .= "Development mode is now disabled.\n";
+        return $return;
     }
 }

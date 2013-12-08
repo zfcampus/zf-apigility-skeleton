@@ -4,4 +4,8 @@
  * @copyright Copyright (c) 2013 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-return array();
+return array(
+    'view_manager' => array(
+        'display_exceptions' => true,
+    )
+);
