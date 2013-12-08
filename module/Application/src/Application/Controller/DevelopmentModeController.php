@@ -42,7 +42,7 @@ class DevelopmentModeController extends AbstractActionController
             copy('config/autoload/global-development.php', 'config/autoload/development.local.php');
         }
 
-        $return .- "You are now in development mode.\n";
+        $return .= "You are now in development mode.\n";
         return $return;
     }
 
