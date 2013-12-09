@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-    config.vm.box = "precise64"
+    config.vm.box = "zf-apigility-skeleton"
 
     config.vm.network :forwarded_port, guest: 80, host: 8080
     config.vm.network :forwarded_port, guest: 8080, host: 9090
@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
     config.ssh.forward_agent = true
 
     config.vm.provider :virtualbox do |v, override|
-	    override.vm.box_url = "http://files.vagrantup.com/precise64.box"
+	    override.vm.box_url = "http://files.vagrantup.com/precise32.box"
 	
         v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
         v.customize ["modifyvm", :id, "--memory", 1024]
