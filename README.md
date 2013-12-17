@@ -76,3 +76,7 @@ inspect your APIs.
 PHP's built-in web server did not start supporting the `PATCH` HTTP method until
 5.4.8. Since the admin API makes use of this HTTP method, you must use a version
 &gt;= 5.4.8 when using the built-in web server.
+
+### NOTE ABOUT OPCACHE
+
+If you add new things (like REST Services) through Admin interface, but they do not show up, disable opcache. Apigility is not using database to store configuration. Instead all configuration information is handled through PHP files. If they get cached with opcache, Admin interface can't function normally. Reminder: Admin interface should be used only in **devlopment** environment. You can enable opcache in **production** environment as there is no need for Admin interface and thus opcache can't cause any problems.
