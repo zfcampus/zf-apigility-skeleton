@@ -71,7 +71,7 @@ You can then visit the site at http://localhost:8080/ - which will bring up a
 welcome page and the ability to visit the dashboard in order to create and
 inspect your APIs.
 
-### NOTE ABOUT USING PHP BUILT-IN WEB SERVER
+### NOTE ABOUT USING THE PHP BUILT-IN WEB SERVER
 
 PHP's built-in web server did not start supporting the `PATCH` HTTP method until
 5.4.8. Since the admin API makes use of this HTTP method, you must use a version
@@ -79,4 +79,18 @@ PHP's built-in web server did not start supporting the `PATCH` HTTP method until
 
 ### NOTE ABOUT OPCACHE
 
-If you add new things (like REST Services) through Admin interface, but they do not show up, disable opcache. Apigility is not using database to store configuration. Instead all configuration information is handled through PHP files. If they get cached with opcache, Admin interface can't function normally. Reminder: Admin interface should be used only in **devlopment** environment. You can enable opcache in **production** environment as there is no need for Admin interface and thus opcache can't cause any problems.
+**Disable all opcode caches when running the admin!**
+
+The admin cannot and will not run correctly when an opcode cache, such as APC or
+OpCache, is enabled. Apigility does not use a database to store configuration;
+instead, it uses PHP configuration files. Opcode caches will cache these files
+on first load, leading to inconsistencies as you write to them, and will
+typically lead to a state where the admin API and code become unusable.
+
+The admin is a **development** tool, and intended for use a development
+environment. As such, you should likely disable opcode caching, regardless.
+
+When you are ready to deploy your API to **production**, however, you can
+disable development mode, thus disabling the admin interface, and safely run an
+opcode cache again. Doing so is recommended for production due to the tremendous
+performance benefits opcode caches provide.
