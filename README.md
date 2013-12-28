@@ -64,7 +64,7 @@ In the latter case, do the following:
 
 ```bash
 cd path/to/install
-php -S 0:8080 -t public/ public/index.php
+php -S 0.0.0.0:8080 -t public public/index.php
 ```
 
 You can then visit the site at http://localhost:8080/ - which will bring up a
