@@ -9,13 +9,14 @@ namespace Application\Controller;
 use Zend\Console\Request as ConsoleRequest;
 use Zend\EventManager\EventManagerInterface;
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\Mvc\MvcEvent;
 
 class DevelopmentModeController extends AbstractActionController
 {
     public function setEventManager(EventManagerInterface $events)
     {
         parent::setEventManager($events);
-        $events->attach('dispatch', function ($e) {
+        $events->attach(MvcEvent::EVENT_DISPATCH, function ($e) {
             $request = $e->getRequest();
             if (!$request instanceof ConsoleRequest) {
                 throw new \RuntimeException(sprintf(
