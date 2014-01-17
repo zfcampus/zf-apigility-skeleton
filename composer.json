@@ -16,6 +16,9 @@
         "source": "https://github.com/zfcampus/zf-apigility-skeleton",
         "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
     },
+    "config": {
+    	"process-timeout": 5000
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
