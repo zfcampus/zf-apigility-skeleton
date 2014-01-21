@@ -1,1 +1,0 @@
-This is the vendor folder for client side dependencies.  Use bower install to install them.
