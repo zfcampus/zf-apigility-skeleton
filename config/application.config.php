@@ -9,6 +9,7 @@ return array(
     'modules' => array(
         'Application',
         'ZF\Apigility',
+        'ZF\Apigility\Provider',
         'ZF\Apigility\Welcome',
         'AssetManager',
         'ZF\ApiProblem',
