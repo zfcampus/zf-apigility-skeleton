@@ -8,6 +8,7 @@ return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
         'Application',
+        'ZF\DevelopmentMode',
         'ZF\Apigility',
         'ZF\Apigility\Provider',
         'ZF\Apigility\Welcome',
