@@ -72,7 +72,6 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
-            'Application\Controller\DevelopmentMode' => 'Application\Controller\DevelopmentModeController',
         ),
     ),
     'view_manager' => array(
@@ -89,31 +88,6 @@ return array(
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
-        ),
-    ),
-    // Console routes
-    'console' => array(
-        'router' => array(
-            'routes' => array(
-                'development-disable' => array(
-                    'options' => array(
-                        'route' => 'development disable',
-                        'defaults' => array(
-                            'controller' => 'Application\Controller\DevelopmentMode',
-                            'action'     => 'disable',
-                        ),
-                    ),
-                ),
-                'development-enable' => array(
-                    'options' => array(
-                        'route' => 'development enable',
-                        'defaults' => array(
-                            'controller' => 'Application\Controller\DevelopmentMode',
-                            'action'     => 'enable',
-                        ),
-                    ),
-                ),
-            ),
         ),
     ),
 );
