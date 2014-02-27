@@ -16,26 +16,30 @@
 
     </head>
     <body>
-        <div class="navbar navbar-inverse navbar-fixed-top za1-nav">
-            <div class="container">
-                <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath('/zf-apigility/img/ag-logo.png') ?>"></a>
+        <header class="navbar navbar-inverse navbar-fixed-top primary za1-nav" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="<?php echo $this->url('home') ?>" class="navbar-brand">
+                        <img src="<?php echo $this->basePath('/zf-apigility/img/ag-logo.png') ?>">
+                    </a>
+                </div>
+
                 <ul class="nav navbar-nav">
                     <?php if (class_exists('ZF\Apigility\Admin\Module', false)): ?>
-                        <li class="active"><a href="<?php echo $this->url('zf-apigility/ui') ?>">Apigility Admin</a></li>
+                        <li class="active"><a href="<?php echo $this->url('zf-apigility/ui') ?>">Admin</a></li>
                     <?php endif; ?>
                 </ul>
             </div>
-        </div>
+        </header>
 
-
-
-        <div class="container">
+        <div class="container-fluid">
             <?php echo $this->content; ?>
-            <hr>
-            <footer>
-                <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
-            </footer>
         </div> <!-- /container -->
+
+        <footer>
+            <hr>
+            <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+        </footer>
         <?php echo $this->inlineScript() ?>
     </body>
 </html>
