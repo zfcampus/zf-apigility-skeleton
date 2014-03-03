@@ -10,12 +10,12 @@ Grab the latest release via the [Apigility website](http://apigility.org/)
 and/or the [releases page](https://github.com/zfcampus/zf-apigility-skeleton/releases).
 At the time of this writing, that URI is:
 
-- https://github.com/zfcampus/zf-apigility-skeleton/releases/download/0.8.0/zf-apigility-skeleton-0.8.0.tgz
+- https://github.com/zfcampus/zf-apigility-skeleton/releases/download/0.9.1/zf-apigility-skeleton-0.9.1.tgz
 
 Untar it:
 
 ```bash
-tar xzf zf-apigility-skeleton-0.8.0.tgz
+tar xzf zf-apigility-skeleton-0.9.1.tgz
 ```
 
 ### Via Composer (create-project)
