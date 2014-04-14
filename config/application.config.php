@@ -11,7 +11,6 @@ return array(
         'ZF\DevelopmentMode',
         'ZF\Apigility',
         'ZF\Apigility\Provider',
-        'ZF\Apigility\Welcome',
         'ZF\Apigility\Documentation',
         'AssetManager',
         'ZF\ApiProblem',
