@@ -9,6 +9,7 @@ return array(
     'modules' => array(
         'ZFTool',
         'ZF\Apigility\Admin',
+        'ZF\Apigility\Welcome',
         'ZF\Configuration',
     ),
     // development time configuration globbing
