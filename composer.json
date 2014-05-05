@@ -33,6 +33,7 @@
         "zfcampus/zf-apigility-provider": "~1.0-dev",
         "zfcampus/zf-apigility-documentation": "~1.0-dev",
         "zfcampus/zf-api-problem": "~1.0-dev",
+        "zfcampus/zf-configuration": "~1.0-dev",
         "zfcampus/zf-content-negotiation": "~1.0-dev",
         "zfcampus/zf-content-validation": "~1.0-dev",
         "zfcampus/zf-development-mode": "~2.0",
@@ -47,7 +48,6 @@
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
         "zfcampus/zf-apigility-admin": "~1.0-dev",
-        "zfcampus/zf-configuration": "~1.0-dev",
         "zfcampus/zf-apigility-welcome": "~1.0-dev",
         "zfcampus/zf-console": "~1.0-dev",
         "zfcampus/zf-deploy": "dev-master"
