@@ -14,6 +14,7 @@ return array(
         'ZF\Apigility\Documentation',
         'AssetManager',
         'ZF\ApiProblem',
+        'ZF\Configuration',
         'ZF\MvcAuth',
         'ZF\OAuth2',
         'ZF\Hal',
