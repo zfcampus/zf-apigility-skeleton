@@ -26,8 +26,6 @@
     },
     "require": {
         "php": ">=5.3.23",
-        "bshaffer/oauth2-server-php": "dev-develop",
-        "rwoverdijk/assetmanager": "~1.3",
         "zendframework/zendframework": "~2.3",
         "zfcampus/zf-apigility": "~1.0-dev",
         "zfcampus/zf-apigility-provider": "~1.0-dev",
