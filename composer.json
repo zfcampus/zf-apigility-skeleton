@@ -48,6 +48,6 @@
         "zfcampus/zf-apigility-admin": "~1.0-dev",
         "zfcampus/zf-apigility-welcome": "~1.0-dev",
         "zfcampus/zf-console": "~1.0-dev",
-        "zfcampus/zf-deploy": "dev-master"
+        "zfcampus/zf-deploy": "~1.0-dev"
     }
 }
