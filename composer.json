@@ -22,32 +22,23 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "branch-alias": {
+            "dev-develop": "1.1-dev"
         }
     },
     "require": {
         "php": ">=5.3.23",
         "zendframework/zendframework": "~2.3",
-        "zfcampus/zf-apigility": "~1.0-dev",
-        "zfcampus/zf-apigility-provider": "~1.0-dev",
-        "zfcampus/zf-apigility-documentation": "~1.0-dev",
-        "zfcampus/zf-api-problem": "~1.0-dev",
-        "zfcampus/zf-configuration": "~1.0-dev",
-        "zfcampus/zf-content-negotiation": "~1.0-dev",
-        "zfcampus/zf-content-validation": "~1.0-dev",
-        "zfcampus/zf-development-mode": "~2.0",
-        "zfcampus/zf-hal": "~1.0-dev",
-        "zfcampus/zf-mvc-auth": "~1.0-dev",
-        "zfcampus/zf-oauth2": "~1.0-dev",
-        "zfcampus/zf-rest": "~1.0-dev",
-        "zfcampus/zf-rpc": "~1.0-dev",
-        "zfcampus/zf-versioning": "~1.0-dev"
+        "zfcampus/zf-apigility": "~1.0",
+        "zfcampus/zf-apigility-documentation": "~1.0",
+        "zfcampus/zf-development-mode": "~2.0"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
-        "zfcampus/zf-apigility-admin": "~1.0-dev",
-        "zfcampus/zf-apigility-welcome": "~1.0-dev",
-        "zfcampus/zf-console": "~1.0-dev",
-        "zfcampus/zf-deploy": "~1.0-dev"
+        "zfcampus/zf-apigility-admin": "~1.0",
+        "zfcampus/zf-apigility-welcome": "~1.0",
+        "zfcampus/zf-deploy": "~1.0"
     }
 }
