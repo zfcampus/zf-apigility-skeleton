@@ -6,7 +6,7 @@
 <?php
     echo $this->headTitle('Apigility');
     echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
-    echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath('/img/favicon.ico')))
+    echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath('/img/favicon.png')))
         ->prependStylesheet($this->basePath('/zf-apigility/css/main.min.css'))
         ->prependStylesheet($this->basePath('/zf-apigility/css/bootstrap.min.css'));
     echo $this->headScript()
@@ -48,7 +48,7 @@
         <footer>
             <hr>
             <div class="container center-block">
-                <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+                <p>&copy; 2013 - <?php echo date('Y') ?> by <a href="http://www.zend.com">Zend Technologies</a> Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
             </div>
         </footer>
         <?php echo $this->inlineScript() ?>
