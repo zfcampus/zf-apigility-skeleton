@@ -1,6 +1,11 @@
 Apigility Skeleton Application
 ==============================
 
+Requirements
+------------
+  
+Please see the [composer.json](composer.json) file.
+
 Installation
 ------------
 
