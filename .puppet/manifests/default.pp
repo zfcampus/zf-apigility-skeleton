@@ -36,6 +36,11 @@ apache::dotconf { 'custom':
 
 apache::module { 'rewrite': }
 
+apache::vhost { 'default':
+  enable    => false,
+  priority  => '',
+}
+
 apache::vhost { 'localhost':
   server_name   => 'localhost',
   serveraliases => [
