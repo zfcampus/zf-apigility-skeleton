@@ -40,6 +40,10 @@ apache::vhost { 'default':
   enable    => false,
   priority  => '',
 }
+apache::vhost { '000-default':
+  enable    => false,
+  priority  => '1',
+}
 
 apache::vhost { 'localhost':
   server_name   => 'localhost',
