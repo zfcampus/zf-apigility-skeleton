@@ -37,12 +37,8 @@ apache::dotconf { 'custom':
 apache::module { 'rewrite': }
 
 apache::vhost { 'default':
-  enable    => false,
-  priority  => '',
-}
-apache::vhost { '000-default':
-  enable    => false,
-  priority  => '1',
+  enable   => false,
+  priority => '000',
 }
 
 apache::vhost { 'localhost':
