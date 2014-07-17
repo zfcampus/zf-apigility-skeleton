@@ -82,6 +82,19 @@ PHP's built-in web server did not start supporting the `PATCH` HTTP method until
 5.4.8. Since the admin API makes use of this HTTP method, you must use a version
 &gt;= 5.4.8 when using the built-in web server.
 
+### NOTE ABOUT USING APACHE
+
+Apache forbids the character sequences `%2F` and `%5C` in URI paths. However, the Apigility Admin
+API uses these characters for a number of service endpoints. As such, if you wish to use the
+Admin UI and/or Admin API with Apache, you will need to configure your Apache vhost/project to
+allow encoded slashes:
+
+```apache
+AllowEncodedSlashes On
+```
+
+This change will need to be made in your server's vhost file (it cannot be added to `.htaccess`).
+
 ### NOTE ABOUT OPCACHE
 
 **Disable all opcode caches when running the admin!**
