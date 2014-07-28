@@ -33,6 +33,8 @@ return array(
             './module',
             './vendor'
         ),
+        // Using __DIR__ to ensure cross-platform compatibility. Some platforms --
+        // e.g., IBM i -- have problems with globs that are not qualified.
         'config_glob_paths' => array('config/autoload/{,*.}{global,local}.php')
     )
 );
