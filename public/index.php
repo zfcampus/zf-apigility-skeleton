@@ -34,5 +34,18 @@ if (file_exists(APPLICATION_PATH . '/config/development.config.php')) {
     $appConfig = Zend\Stdlib\ArrayUtils::merge($appConfig, include APPLICATION_PATH . '/config/development.config.php');
 }
 
+// Some OS/Web Server combinations do not glob properly for paths unless they
+// are fully qualified (e.g., IBM i). The following prefixes the default glob
+// path with the value of the current working directory to ensure configuration
+// globbing will work cross-platform.
+if (isset($appConfig['module_listener_options']['config_glob_paths'])) {
+    foreach ($appConfig['module_listener_options']['config_glob_paths'] as $index => $path) {
+        if ($path !== 'config/autoload/{,*.}{global,local}.php') {
+            continue;
+        }
+        $appConfig['module_listener_options']['config_glob_paths'][$index] = getcwd() . '/' . $path;
+    }
+}
+
 // Run the application!
 Zend\Mvc\Application::init($appConfig)->run();

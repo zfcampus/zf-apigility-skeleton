@@ -35,6 +35,6 @@ return array(
         ),
         // Using __DIR__ to ensure cross-platform compatibility. Some platforms --
         // e.g., IBM i -- have problems with globs that are not qualified.
-        'config_glob_paths' => array(__DIR__ . '/autoload/{,*.}{global,local}.php')
+        'config_glob_paths' => array('config/autoload/{,*.}{global,local}.php')
     )
 );
