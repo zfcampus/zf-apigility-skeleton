@@ -27,7 +27,7 @@
     },
     "require": {
         "php": ">=5.3.23",
-        "zendframework/zendframework": "~2.3",
+        "zendframework/zendframework": ">=2.3.2,<3.0.0",
         "zfcampus/zf-apigility": "~1.0",
         "zfcampus/zf-apigility-documentation": "~1.0",
         "zfcampus/zf-development-mode": "~2.0"
