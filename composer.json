@@ -36,7 +36,6 @@
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
         "zfcampus/zf-apigility-admin": "~1.0",
-        "zfcampus/zf-apigility-welcome": "~1.0",
         "zfcampus/zf-deploy": "~1.0"
     }
 }
