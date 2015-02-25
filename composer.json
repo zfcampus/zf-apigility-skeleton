@@ -35,8 +35,8 @@
     "require-dev": {
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
-        "zfcampus/zf-apigility-admin": "dev-develop",
-        "zfcampus/zf-apigility-admin-ui": "dev-develop",
+        "zfcampus/zf-apigility-admin": "dev-develop@dev",
+        "zfcampus/zf-apigility-admin-ui": "dev-develop@dev",
         "zfcampus/zf-deploy": "~1.0"
     }
 }
