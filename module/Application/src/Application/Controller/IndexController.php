@@ -12,8 +12,6 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        $viewModel = new \Zend\View\Model\ViewModel();
-        $viewModel->setTerminal(true);
-        return $viewModel;
+        return $this->redirect()->toRoute('zf-apigility/ui');
     }
 }
