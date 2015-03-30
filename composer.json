@@ -29,14 +29,14 @@
         "php": ">=5.3.23",
         "zendframework/zendframework": ">=2.3.2,<3.0.0",
         "zfcampus/zf-apigility": "~1.0",
-        "zfcampus/zf-apigility-documentation": "~1.0",
-        "zfcampus/zf-development-mode": "~2.0"
+        "zfcampus/zf-apigility-documentation": "~1.0"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
         "zfcampus/zf-apigility-admin": "dev-develop@dev",
         "zfcampus/zf-apigility-admin-ui": "dev-develop@dev",
-        "zfcampus/zf-deploy": "~1.0"
+        "zfcampus/zf-deploy": "~1.0",
+        "zfcampus/zf-development-mode": "~2.0"
     }
 }

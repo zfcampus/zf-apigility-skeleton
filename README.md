@@ -3,7 +3,7 @@ Apigility Skeleton Application
 
 Requirements
 ------------
-  
+
 Please see the [composer.json](composer.json) file.
 
 Installation
@@ -26,7 +26,7 @@ tar xzf zf-apigility-skeleton-0.9.1.tgz
 ### Via Composer (create-project)
 
 You can use the `create-project` command from [Composer](http://getcomposer.org/)
-to create the project in one go:
+to create the project in one go (you need to install [composer.phar](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable)):
 
 ```bash
 curl -s https://getcomposer.org/installer | php --
