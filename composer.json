@@ -17,7 +17,7 @@
         "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
     },
     "config": {
-    	"process-timeout": 5000
+        "process-timeout": 5000
     },
     "extra": {
         "branch-alias": {
