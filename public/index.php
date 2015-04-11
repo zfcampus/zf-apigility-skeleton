@@ -3,13 +3,26 @@
  * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
- 
- /*
-  * PHP by default returns HTTP 200 even when exceptions are thrown.
-  *
-  * Now by default return HTTP 500 so any API client can trust in the HTTP response code.
-  */
-http_response_code(500);
+
+if (ini_get('display_errors')) {
+    /*
+     * PHP by default returns HTTP 200 even when exceptions are thrown.
+     *
+     * Now by default return HTTP 500 so any API client can trust in the HTTP response code.
+     */
+    http_response_code(500);
+
+    function exception_error_handler($severity, $message, $file, $line)
+    {
+        if (!(error_reporting() & $severity)) {
+            // This error code is not included in error_reporting
+            return;
+        }
+        throw new ErrorException($message, 0, $severity, $file, $line);
+    }
+
+    set_error_handler("exception_error_handler");
+}
 
 /**
  * This makes our life easier when dealing with paths. Everything is relative
