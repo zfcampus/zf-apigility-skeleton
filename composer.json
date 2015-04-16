@@ -27,16 +27,27 @@
     },
     "require": {
         "php": ">=5.3.23",
-        "zendframework/zendframework": ">=2.3.2,<3.0.0",
+        "zendframework/zendframework": "~2.4",
         "zfcampus/zf-apigility": "~1.0",
         "zfcampus/zf-apigility-documentation": "~1.0",
-        "zfcampus/zf-development-mode": "~2.0"
+        "zfcampus/zf-content-validation": "~1.1-dev@dev",
+        "zfcampus/zf-hal": "~1.1-dev@dev",
+        "zfcampus/zf-oauth2": "~1.1-dev@dev",
+        "zfcampus/zf-mvc-auth": "~1.1-dev@dev",
+        "zfcampus/zf-rest": "~1.1-dev@dev"
+
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
-        "zfcampus/zf-apigility-admin": "~1.0",
-        "zfcampus/zf-apigility-welcome": "~1.0",
-        "zfcampus/zf-deploy": "~1.0"
+        "zfcampus/zf-apigility-admin": "~1.1-dev@dev",
+        "zfcampus/zf-apigility-admin-ui": "~1.1-dev@dev",
+        "zfcampus/zf-deploy": "~1.0",
+        "zfcampus/zf-development-mode": "~2.0"
+    },
+    "suggest": {
+        "zfcampus/zf-apigility-doctrine": "zfcampus/zf-apigility-doctrine ~1.0 to create Doctrine-Connected REST services",
+        "zfcampus/zf-http-cache": "zfcampus/zf-http-cache ~1.0 to add HTTP caching to your API",
+        "zfr/zfr-cors": "zfr/zfr-cors ~1.2 to add CORS support to your API"
     }
 }
