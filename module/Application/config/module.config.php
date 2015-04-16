@@ -17,20 +17,6 @@ return array(
                     ),
                 ),
             ),
-            'zf-apigility' => array(
-                'child_routes' => array(
-                    'ui' => array(
-                        'type'    => 'Literal',
-                        'options' => array(
-                            'route'    => '/enable',
-                            'defaults' => array(
-                                'controller' => 'Application\Controller\Index',
-                                'action'     => 'dev',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
         ),
     ),
     'service_manager' => array(
