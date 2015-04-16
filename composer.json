@@ -36,6 +36,8 @@
         "zendframework/zend-developer-tools": "dev-master",
         "zfcampus/zf-apigility-admin": "dev-develop@dev",
         "zfcampus/zf-apigility-admin-ui": "dev-develop@dev",
+        "zfcampus/zf-mvc-auth": "dev-develop@dev",
+        "zfcampus/zf-rest": "dev-develop@dev",
         "zfcampus/zf-deploy": "~1.0",
         "zfcampus/zf-development-mode": "~2.0"
     }

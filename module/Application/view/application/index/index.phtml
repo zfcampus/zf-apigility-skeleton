@@ -1,12 +1,11 @@
 <div class="hero-unit">
-    <h1>ZF API First Application</h1>
-    <p>Hero image here</p>
+    <p align="center"><img src="/img/ag-hero.png" alt="Apigility logo"></p>
 </div>
-
 <div class="row">
-    <div class="span12">
-        <h2>Getting Started</h2>
-        <p>It it important that your application be put into development mode in order to start using the ZF API First Administration screens to assist building your app.</p>
-        <p>Currently, your application <b><?php echo (class_exists('ZF\ApiFirstAdmin\Module', false)) ? 'IS' : 'IS NOT' ?></b> in development mode.  Here are some instructions on how to do it:</p>
+    <div class="span8">
+        <p><br /><br />In order to use the <strong>Apigility Admin UI</strong> you need to enable the <strong>development</strong> mode. Currently your application is running in <strong>production</strong> mode.</p>
+        <p>To enable the development mode you can execute the following command from the terminal:</p>
+        <p><pre>php public/index.php development enable</pre></p>
+        <p>Remember to set always the production mode if you want to deploy your API in a staging/production environment.</p>
     </div>
 </div>
