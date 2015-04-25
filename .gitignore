@@ -6,7 +6,6 @@ nbproject
 .idea
 .project
 .settings
-composer.lock
 vendor/
 public/vendor/
 config/development.config.php
