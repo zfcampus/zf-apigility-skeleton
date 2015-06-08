@@ -28,4 +28,22 @@ Vagrant.configure("2") do |config|
         puppet.module_path = ".puppet/modules"
         puppet.options = ['--verbose']
     end
+
+    # Message
+    config.vm.post_up_message = "West of House
+You are standing in an open field west of a white house, with a boarded front door.
+There is a small mailbox here.
+
+>open mailbox
+Opening the small mailbox reveals a leaflet.
+
+>read leaflet
+(Taken)
+\"WELCOME TO APIGILITY!
+
+SSH to the VM: vagrant ssh
+Change to synced folder on the VM: cd /vagrant
+Run Apigility in a browser on the host: http://localhost:8080/\"
+ "
+
 end
