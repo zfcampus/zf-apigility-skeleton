@@ -43,7 +43,7 @@ Opening the small mailbox reveals a leaflet.
 
 SSH to the VM: vagrant ssh
 Change to synced folder on the VM: cd /vagrant
-Run Apigility in a browser on the host: http://localhost:8080/\"
+Run Apigility in a browser on the host: http://localhost:8080/ \"
  "
 
 end
