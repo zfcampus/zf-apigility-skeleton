@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "326211785a334dad29079c79e6f104a7",
+    "hash": "9dc3f4337001b0b6975d2175891cc010",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
-            "version": "v1.7.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bshaffer/oauth2-server-php.git",
-                "reference": "8878e192dcd3abb48d92b69a5d2cf75bcda4eb72"
+                "reference": "7fde34c417e0f6542dfbe6aedf8132eb5575acfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bshaffer/oauth2-server-php/zipball/8878e192dcd3abb48d92b69a5d2cf75bcda4eb72",
-                "reference": "8878e192dcd3abb48d92b69a5d2cf75bcda4eb72",
+                "url": "https://api.github.com/repos/bshaffer/oauth2-server-php/zipball/7fde34c417e0f6542dfbe6aedf8132eb5575acfb",
+                "reference": "7fde34c417e0f6542dfbe6aedf8132eb5575acfb",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "oauth",
                 "oauth2"
             ],
-            "time": "2015-04-24 03:00:33"
+            "time": "2015-05-21 20:07:03"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -191,21 +191,20 @@
         },
         {
             "name": "symfony/process",
-            "version": "v2.6.6",
-            "target-dir": "Symfony/Component/Process",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "a8bebaec1a9dc6cde53e0250e32917579b0be552"
+                "reference": "e0a82b58e36afc60f8e79b8bc85a22bb064077c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/a8bebaec1a9dc6cde53e0250e32917579b0be552",
-                "reference": "a8bebaec1a9dc6cde53e0250e32917579b0be552",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/e0a82b58e36afc60f8e79b8bc85a22bb064077c1",
+                "reference": "e0a82b58e36afc60f8e79b8bc85a22bb064077c1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.9"
             },
             "require-dev": {
                 "symfony/phpunit-bridge": "~2.7"
@@ -213,11 +212,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Process\\": ""
                 }
             },
@@ -227,30 +226,30 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Process Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-30 15:54:10"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-15 13:33:16"
         },
         {
             "name": "zendframework/zendframework",
-            "version": "2.4.0",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zf2.git",
-                "reference": "628b809fcadcd326f2074a9815e5b1fce57077ef"
+                "reference": "6ca85dcf2e9de67beb9bffd4e121e5a3a730b649"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf2/zipball/628b809fcadcd326f2074a9815e5b1fce57077ef",
-                "reference": "628b809fcadcd326f2074a9815e5b1fce57077ef",
+                "url": "https://api.github.com/repos/zendframework/zf2/zipball/6ca85dcf2e9de67beb9bffd4e121e5a3a730b649",
+                "reference": "6ca85dcf2e9de67beb9bffd4e121e5a3a730b649",
                 "shasum": ""
             },
             "require": {
@@ -316,7 +315,7 @@
                 "ircmaxell/random-lib": "~1.1",
                 "mikey179/vfsstream": "~1.2",
                 "phpunit/phpcov": "~2.0",
-                "phpunit/phpunit": "~4.0",
+                "phpunit/phpunit": "~4.6",
                 "satooshi/php-coveralls": "dev-master"
             },
             "suggest": {
@@ -335,8 +334,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev",
-                    "dev-develop": "2.4-dev"
+                    "dev-master": "2.4-dev",
+                    "dev-develop": "2.5-dev"
                 }
             },
             "autoload": {
@@ -354,7 +353,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2015-03-31 15:39:14"
+            "time": "2015-05-11 16:17:05"
         },
         {
             "name": "zendframework/zendxml",
@@ -698,16 +697,16 @@
         },
         {
             "name": "zfcampus/zf-content-negotiation",
-            "version": "1.0.4",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-content-negotiation.git",
-                "reference": "025302ec4495d7a8308a3c342104380fca1ae5e5"
+                "reference": "555cf764fc95de37ea32bcb68b6db6535b676bf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-content-negotiation/zipball/025302ec4495d7a8308a3c342104380fca1ae5e5",
-                "reference": "025302ec4495d7a8308a3c342104380fca1ae5e5",
+                "url": "https://api.github.com/repos/zfcampus/zf-content-negotiation/zipball/555cf764fc95de37ea32bcb68b6db6535b676bf8",
+                "reference": "555cf764fc95de37ea32bcb68b6db6535b676bf8",
                 "shasum": ""
             },
             "require": {
@@ -760,7 +759,7 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2015-04-15 17:15:22"
+            "time": "2015-05-05 18:35:22"
         },
         {
             "name": "zfcampus/zf-content-validation",
@@ -823,6 +822,70 @@
                 "zf2"
             ],
             "time": "2015-04-16 16:45:50"
+        },
+        {
+            "name": "zfcampus/zf-development-mode",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zfcampus/zf-development-mode.git",
+                "reference": "1199c45418ba6328576c84a5e6c848da6fb29953"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zfcampus/zf-development-mode/zipball/1199c45418ba6328576c84a5e6c848da6fb29953",
+                "reference": "1199c45418ba6328576c84a5e6c848da6fb29953",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.23",
+                "zendframework/zend-console": ">=2.2.2,<3.0",
+                "zendframework/zend-mvc": ">=2.2.2,<3.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "suggest": {
+                "zendframework/zend-developer-tools": "dev-master",
+                "zendframework/zend-tool": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev",
+                    "dev-develop": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "./Module.php",
+                    "./DevelopmentModeController.php",
+                    "./DevelopmentModeControllerFactory.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Allen",
+                    "email": "rob@19ft.com",
+                    "homepage": "http://19ft.com"
+                },
+                {
+                    "name": "Ralph Schindler",
+                    "email": "ralph.s@zend.com",
+                    "homepage": "http://framework.zend.com"
+                }
+            ],
+            "description": "ZF2 development mode module",
+            "homepage": "http://github.com/zfcampus/zf-development-mode",
+            "keywords": [
+                "framework",
+                "zf2"
+            ],
+            "time": "2015-04-16 14:42:54"
         },
         {
             "name": "zfcampus/zf-hal",
@@ -892,16 +955,16 @@
         },
         {
             "name": "zfcampus/zf-mvc-auth",
-            "version": "1.1.1",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-mvc-auth.git",
-                "reference": "d0b4c25999b79c12840ab122dc5ab886cd4847fd"
+                "reference": "597dc878ce6d34d499956b27f535fb8c5459d898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-mvc-auth/zipball/d0b4c25999b79c12840ab122dc5ab886cd4847fd",
-                "reference": "d0b4c25999b79c12840ab122dc5ab886cd4847fd",
+                "url": "https://api.github.com/repos/zfcampus/zf-mvc-auth/zipball/597dc878ce6d34d499956b27f535fb8c5459d898",
+                "reference": "597dc878ce6d34d499956b27f535fb8c5459d898",
                 "shasum": ""
             },
             "require": {
@@ -953,20 +1016,20 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2015-04-25 16:21:42"
+            "time": "2015-04-30 14:10:47"
         },
         {
             "name": "zfcampus/zf-oauth2",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-oauth2.git",
-                "reference": "2695ea45b9815de74437a450f0b082ba21e4aa8a"
+                "reference": "d2545896b0c94f31db8111790763ef27cbdef1ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-oauth2/zipball/2695ea45b9815de74437a450f0b082ba21e4aa8a",
-                "reference": "2695ea45b9815de74437a450f0b082ba21e4aa8a",
+                "url": "https://api.github.com/repos/zfcampus/zf-oauth2/zipball/d2545896b0c94f31db8111790763ef27cbdef1ad",
+                "reference": "d2545896b0c94f31db8111790763ef27cbdef1ad",
                 "shasum": ""
             },
             "require": {
@@ -1021,7 +1084,7 @@
                 "oauth2",
                 "zf2"
             ],
-            "time": "2015-04-24 17:18:00"
+            "time": "2015-04-29 22:10:45"
         },
         {
             "name": "zfcampus/zf-rest",
@@ -1493,12 +1556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/ZendDeveloperTools.git",
-                "reference": "51180b8c860948f17755a2bca4ef602cc3648fdb"
+                "reference": "d3432681aa32177a741ad23604a40af9ad454acb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/51180b8c860948f17755a2bca4ef602cc3648fdb",
-                "reference": "51180b8c860948f17755a2bca4ef602cc3648fdb",
+                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/d3432681aa32177a741ad23604a40af9ad454acb",
+                "reference": "d3432681aa32177a741ad23604a40af9ad454acb",
                 "shasum": ""
             },
             "require": {
@@ -1553,7 +1616,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2015-04-23 14:41:51"
+            "time": "2015-05-06 10:10:04"
         },
         {
             "name": "zendframework/zenddiagnostics",
@@ -1899,70 +1962,6 @@
                 "zf2"
             ],
             "time": "2015-03-12 16:31:35"
-        },
-        {
-            "name": "zfcampus/zf-development-mode",
-            "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zfcampus/zf-development-mode.git",
-                "reference": "1199c45418ba6328576c84a5e6c848da6fb29953"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-development-mode/zipball/1199c45418ba6328576c84a5e6c848da6fb29953",
-                "reference": "1199c45418ba6328576c84a5e6c848da6fb29953",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.23",
-                "zendframework/zend-console": ">=2.2.2,<3.0",
-                "zendframework/zend-mvc": ">=2.2.2,<3.0"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "~1.5"
-            },
-            "suggest": {
-                "zendframework/zend-developer-tools": "dev-master",
-                "zendframework/zend-tool": "dev-master"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev",
-                    "dev-develop": "2.1-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "./Module.php",
-                    "./DevelopmentModeController.php",
-                    "./DevelopmentModeControllerFactory.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Rob Allen",
-                    "email": "rob@19ft.com",
-                    "homepage": "http://19ft.com"
-                },
-                {
-                    "name": "Ralph Schindler",
-                    "email": "ralph.s@zend.com",
-                    "homepage": "http://framework.zend.com"
-                }
-            ],
-            "description": "ZF2 development mode module",
-            "homepage": "http://github.com/zfcampus/zf-development-mode",
-            "keywords": [
-                "framework",
-                "zf2"
-            ],
-            "time": "2015-04-16 14:42:54"
         }
     ],
     "aliases": [],
