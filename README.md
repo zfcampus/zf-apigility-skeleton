@@ -112,3 +112,35 @@ When you are ready to deploy your API to **production**, however, you can
 disable development mode, thus disabling the admin interface, and safely run an
 opcode cache again. Doing so is recommended for production due to the tremendous
 performance benefits opcode caches provide.
+
+Docker
+------------
+
+#### Development
+
+Prepare your development environment using [docker compose](https://docs.docker.com/compose/install/):
+```bash
+git clone https://github.com/zfcampus/zf-apigility-skeleton
+
+cd zf-apigility-skeleton
+
+docker-compose build
+```
+
+Start the development environment:
+```bash
+docker-compose up
+```
+Access your editor from `http://localhost:8080/` or `http://<boot2docker ip>:8080/` if on Windows or Mac.
+
+#### Production
+
+Use the included [Dockerfile](https://docs.docker.com/reference/builder/) to build an [Apache](http://httpd.apache.org/) container:
+```bash
+docker build -t apighost .
+```
+
+Test your container:
+```bash
+docker run -it -p "80:80" apighost
+```
