@@ -141,3 +141,37 @@ cd /vagrant
 ```
 
 For vagrant documentation, please refer to [vagrantup.com](https://www.vagrantup.com/)
+
+### Docker
+
+If you develop or deploy using Docker, we provide both development and production configuration for
+you.
+
+#### Development
+
+Prepare your development environment using [docker compose](https://docs.docker.com/compose/install/):
+```bash
+git clone https://github.com/zfcampus/zf-apigility-skeleton
+
+cd zf-apigility-skeleton
+
+docker-compose build
+```
+
+Start the development environment:
+```bash
+docker-compose up
+```
+Access your editor from `http://localhost:8080/` or `http://<boot2docker ip>:8080/` if on Windows or Mac.
+
+#### Production
+
+Use the included [Dockerfile](https://docs.docker.com/reference/builder/) to build an [Apache](http://httpd.apache.org/) container:
+```bash
+docker build -t apighost .
+```
+
+Test your container:
+```bash
+docker run -it -p "80:80" apighost
+```
