@@ -1,4 +1,4 @@
-<?php
+<?php // @codingStandardsIgnoreFile
 /**
  * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
@@ -48,4 +48,4 @@ if (isset($appConfig['module_listener_options']['config_glob_paths'])) {
 }
 
 // Run the application!
-Zend\Mvc\Application::init($appConfig)->run();
+ZF\Apigility\Application::init($appConfig)->run();
