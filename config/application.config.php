@@ -5,25 +5,8 @@
  */
 
 return array(
-    // This should be an array of module namespaces used in the application.
-    'modules' => array(
-        'Application',
-        'ZF\DevelopmentMode',
-        'ZF\Apigility',
-        'ZF\Apigility\Provider',
-        'ZF\Apigility\Documentation',
-        'AssetManager',
-        'ZF\ApiProblem',
-        'ZF\Configuration',
-        'ZF\OAuth2',
-        'ZF\MvcAuth',
-        'ZF\Hal',
-        'ZF\ContentNegotiation',
-        'ZF\ContentValidation',
-        'ZF\Rest',
-        'ZF\Rpc',
-        'ZF\Versioning',
-    ),
+    // Retrieve the list of modules for this application.
+    'modules' => include __DIR__ . '/modules.config.php',
     // This should be an array of paths in which modules reside.
     // If a string key is provided, the listener will consider that a module
     // namespace, the value of that key the specific path to that module's
