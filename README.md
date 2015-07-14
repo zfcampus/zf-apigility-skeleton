@@ -12,16 +12,24 @@ Installation
 ### Via release tarball
 
 Grab the latest release via the [Apigility website](http://apigility.org/)
-and/or the [releases page](https://github.com/zfcampus/zf-apigility-skeleton/releases).
-At the time of this writing, that URI is:
-
-- https://github.com/zfcampus/zf-apigility-skeleton/releases/download/0.9.1/zf-apigility-skeleton-0.9.1.tgz
+and/or the [releases page](https://github.com/zfcampus/zf-apigility-skeleton/releases); each release
+has distribution tarballs and zipballs available.
 
 Untar it:
 
 ```bash
-tar xzf zf-apigility-skeleton-0.9.1.tgz
+tar xzf zf-apigility-skeleton-{version}.tgz
 ```
+
+(Where `{version}` is the version you downloaded.)
+
+Or unzip, if you chose the zipball:
+
+```bash
+unzip zf-apigility-skeleton-{version}.zip
+```
+
+(Where `{version}` is the version you downloaded.)
 
 ### Via Composer (create-project)
 
