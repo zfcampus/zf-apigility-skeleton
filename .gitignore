@@ -7,11 +7,13 @@ nbproject
 .project
 .settings
 vendor/
-public/vendor/
 config/development.config.php
 config/autoload/local.php
 config/autoload/*.local.php
-!public/vendor/README.md
-data/cache/*
+data/*
 !data/cache/.gitkeep
 .vagrant
+puphpet/puppet/modules/*
+!puphpet/puppet/modules/LICENSE
+!puphpet/puppet/modules/README.md
+html
