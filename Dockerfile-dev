@@ -31,7 +31,8 @@ WORKDIR /var/www
 
 VOLUME /var/www
 
-RUN cp /usr/src/php/php.ini-development /usr/local/etc/php/php.ini
+RUN cp /usr/src/php/php.ini-development /usr/local/etc/php/php.ini \
+ && sed -i 's/;always_populate_raw_post_data/always_populate_raw_post_data/g' /usr/local/etc/php/php.ini
 
 CMD composer install \
  && php public/index.php development enable \
