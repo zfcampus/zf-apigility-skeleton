@@ -171,6 +171,8 @@ apache:
             ssl_certs_dir: ''
             ssl_protocol: ''
             ssl_cipher: ''
+            setenvif:
+                - ^Authorization$ "(.+)" HTTP_AUTHORIZATION=$1
             directories:
                 avd_6rxty09c4zgy:
                     path: /var/www/public
