@@ -27,8 +27,11 @@ return array(
         ),
     ),
     'controllers' => array(
-        'invokables' => array(
+        'aliases' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
+        ),
+        'factories' => array(
+            'Application\Controller\IndexController' => 'Zend\ServiceManager\Factory\InvokableFactory',
         ),
     ),
     'view_manager' => array(
