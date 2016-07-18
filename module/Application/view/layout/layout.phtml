@@ -6,11 +6,13 @@
     echo $this->headTitle('Apigility');
     echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
     echo $this->headLink(array('rel' => 'icon', 'type' => 'image/png', 'href' => $this->basePath('/img/favicon.png')))
-        ->prependStylesheet($this->basePath('/zf-apigility/css/main.min.css'))
-        ->prependStylesheet($this->basePath('/zf-apigility/css/bootstrap.min.css'));
+        ->appendStylesheet($this->basePath('/css/bootstrap.min.css'))
+        ->appendStylesheet($this->basePath('/css/style.css'))
+    ;
     echo $this->headScript()
-        ->prependFile($this->basePath('/zf-apigility/js/bootstrap.min.js'))
-        ->prependFile($this->basePath('/zf-apigility/js/jquery.min.js'));
+        ->appendFile($this->basePath('/js/jquery-2.2.4.min.js'))
+        ->appendFile($this->basePath('/js/bootstrap.min.js'))
+    ;
 ?>
     </head>
     <body>

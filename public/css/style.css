@@ -1,0 +1,31 @@
+body {
+    padding-top: 71px;
+}
+
+.navbar > .container-fluid .navbar-brand {
+    padding: 10px 15px;
+}
+
+.navbar > .container-fluid .ag-navbar-collapse {
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar > .container-fluid .ag-navbar-collapse ul.navbar-nav {
+    z-index: 3;
+    float: none;
+    height: 100%;
+}
+
+.navbar > .container-fluid .ag-navbar-collapse ul.navbar-nav > li {
+    min-width: 85px;
+    text-align: center;
+}
+
+.navbar > .container-fluid .ag-navbar-collapse ul.navbar-nav > li > a {
+    min-height: 70px;
+}
+
+.navbar-inverse {
+    background: #0c0c56;
+}
