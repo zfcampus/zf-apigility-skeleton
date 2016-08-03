@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed6a7cc42b1ea4b8f61d78aee2293bad",
-    "content-hash": "12e75489a28752701aea7efdceb08374",
+    "hash": "905b5c274ef893de7631db3b19805ba1",
+    "content-hash": "7219fd79b6fa55a4a5b4b06329ea7d7b",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -243,6 +243,50 @@
                 "zf2"
             ],
             "time": "2016-02-28 15:02:34"
+        },
+        {
+            "name": "zendframework/zend-component-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-component-installer.git",
+                "reference": "2799a0513c1af088f3c9b0f03197436ad7741165"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-component-installer/zipball/2799a0513c1af088f3c9b0f03197436ad7741165",
+                "reference": "2799a0513c1af088f3c9b0f03197436ad7741165",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "composer/composer": ">=1.0.0-alpha10",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^4.7",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "class": "Zend\\ComponentInstaller\\ComponentInstaller"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\ComponentInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Composer plugin for automating component registration in zend-mvc and Expressive applications",
+            "time": "2016-06-27 21:19:02"
         },
         {
             "name": "zendframework/zend-config",
@@ -2053,16 +2097,16 @@
         },
         {
             "name": "zfcampus/zf-mvc-auth",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-mvc-auth.git",
-                "reference": "95de6b929d0b94b1886aff2a090387a37db7e40e"
+                "reference": "3c15ae465ae75d594c939043e44e3ba079ab0fa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-mvc-auth/zipball/95de6b929d0b94b1886aff2a090387a37db7e40e",
-                "reference": "95de6b929d0b94b1886aff2a090387a37db7e40e",
+                "url": "https://api.github.com/repos/zfcampus/zf-mvc-auth/zipball/3c15ae465ae75d594c939043e44e3ba079ab0fa7",
+                "reference": "3c15ae465ae75d594c939043e44e3ba079ab0fa7",
                 "shasum": ""
             },
             "require": {
@@ -2109,7 +2153,7 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2016-07-25 15:28:36"
+            "time": "2016-08-03 20:34:18"
         },
         {
             "name": "zfcampus/zf-oauth2",
@@ -2868,7 +2912,7 @@
             "source": {
                 "type": "git",
                 "url": "/home/matthew/git/modules/zfcampus/zf-apigility-admin",
-                "reference": "fdce486af557af17139c08e60f48f3ca60c9dcc5"
+                "reference": "55d8eb61434fdd896f3209f125888dc44a2606e2"
             },
             "require": {
                 "php": "^5.6 || ^7.0",
@@ -2968,7 +3012,7 @@
                 "source": "https://github.com/zfcampus/zf-apigility-admin",
                 "issues": "https://github.com/zfcampus/zf-apigility-admin/issues"
             },
-            "time": "2016-08-03 15:21:30"
+            "time": "2016-08-03 21:37:32"
         },
         {
             "name": "zfcampus/zf-apigility-admin-ui",
@@ -3020,6 +3064,49 @@
                 "zf2"
             ],
             "time": "2016-07-27 20:33:13"
+        },
+        {
+            "name": "zfcampus/zf-asset-manager",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zfcampus/zf-asset-manager.git",
+                "reference": "29916d6575c323f27ae376cd288e622352ae3c05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zfcampus/zf-asset-manager/zipball/29916d6575c323f27ae376cd288e622352ae3c05",
+                "reference": "29916d6575c323f27ae376cd288e622352ae3c05",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "composer/composer": ">=1.0.0-alpha10",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.6.2"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "class": "ZF\\AssetManager\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ZF\\AssetManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Composer plugin for copying module assets into application document roots.",
+            "time": "2016-07-26 20:19:23"
         },
         {
             "name": "zfcampus/zf-console",
@@ -3131,6 +3218,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "zendframework/zend-component-installer": 20,
         "zfcampus/zf-apigility-admin": 20
     },
     "prefer-stable": false,

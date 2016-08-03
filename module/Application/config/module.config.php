@@ -4,6 +4,10 @@
  * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
+namespace Application;
+
+use Zend\ServiceManager\Factory\InvokableFactory;
+
 return array(
     'router' => array(
         'routes' => array(
@@ -12,23 +16,16 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => Controller\IndexController::class,
                         'action'     => 'index',
                     ),
                 ),
             ),
         ),
     ),
-    'service_manager' => array(
-        'abstract_factories' => array(
-            'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
-            'Zend\Db\Adapter\AdapterAbstractServiceFactory',
-            'Zend\Log\LoggerAbstractServiceFactory',
-        ),
-    ),
     'controllers' => array(
-        'invokables' => array(
-            'Application\Controller\Index' => 'Application\Controller\IndexController',
+        'factories' => array(
+            Controller\IndexController::class => InvokableFactory::class,
         ),
     ),
     'view_manager' => array(

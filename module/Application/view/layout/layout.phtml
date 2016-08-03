@@ -1,4 +1,4 @@
-<?php echo $this->doctype(); ?>
+<?= $this->doctype(); ?>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -15,14 +15,14 @@
     </head>
     <body>
         <div class="container">
-            <?php echo $this->content; ?>
+            <?= $this->content; ?>
         </div>
         <footer>
             <hr>
             <div class="container center-block">
               <div class="row">
                 <div class="col-sm-6"><p class="pull-left">
-                    &copy; Copyright 2013 - <?php echo date('Y') ?>
+                    &copy; Copyright 2013 - <?= date('Y') ?>
                     by <a href="http://www.zend.com">Zend Technologies</a> Ltd.
                 </p></div>
                 <div class="col-sm-6"><p class="pull-right">
@@ -31,6 +31,6 @@
               </div>
             </div>
         </footer>
-        <?php echo $this->inlineScript() ?>
+        <?= $this->inlineScript() ?>
     </body>
 </html>
