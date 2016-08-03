@@ -49,7 +49,9 @@
         "zfr/zfr-cors": "zfr/zfr-cors ^1.2 to add CORS support to your API"
     },
     "scripts": {
+        "development-disable": "zf-development-mode disable",
         "development-enable": "zf-development-mode enable",
-        "development-disable": "zf-development-mode disable"
+        "development-status": "zf-development-mode status",
+        "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php"
     }
 }
