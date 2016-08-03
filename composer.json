@@ -47,5 +47,9 @@
         "zfcampus/zf-apigility-doctrine": "zfcampus/zf-apigility-doctrine ^1.0 to create Doctrine-Connected REST services",
         "zfcampus/zf-http-cache": "zfcampus/zf-http-cache ^1.3 to add HTTP caching to your API",
         "zfr/zfr-cors": "zfr/zfr-cors ^1.2 to add CORS support to your API"
+    },
+    "scripts": {
+        "development-enable": "zf-development-mode enable",
+        "development-disable": "zf-development-mode disable"
     }
 }
