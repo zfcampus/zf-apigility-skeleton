@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "905b5c274ef893de7631db3b19805ba1",
-    "content-hash": "7219fd79b6fa55a4a5b4b06329ea7d7b",
+    "hash": "7404dc71870cd6e674ba92c113dae3d2",
+    "content-hash": "dfc3a589ff4c257053811d7b03153b1a",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -1701,16 +1701,16 @@
         },
         {
             "name": "zfcampus/zf-apigility-documentation",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-apigility-documentation.git",
-                "reference": "fd5ed08a77355ff7b44e8788568709e3eab0099c"
+                "reference": "b4c28f2d942fec7071e146020a0bf10a508e0f1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-apigility-documentation/zipball/fd5ed08a77355ff7b44e8788568709e3eab0099c",
-                "reference": "fd5ed08a77355ff7b44e8788568709e3eab0099c",
+                "url": "https://api.github.com/repos/zfcampus/zf-apigility-documentation/zipball/b4c28f2d942fec7071e146020a0bf10a508e0f1e",
+                "reference": "b4c28f2d942fec7071e146020a0bf10a508e0f1e",
                 "shasum": ""
             },
             "require": {
@@ -1758,7 +1758,7 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2016-07-14 15:34:14"
+            "time": "2016-08-04 22:55:44"
         },
         {
             "name": "zfcampus/zf-apigility-provider",
@@ -1926,16 +1926,16 @@
         },
         {
             "name": "zfcampus/zf-content-validation",
-            "version": "1.3.3",
+            "version": "1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-content-validation.git",
-                "reference": "448a45692661e868ac8e298892d215369ceaced0"
+                "reference": "aa9b688d0995bab00a3c94fe629891d3581b0ca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-content-validation/zipball/448a45692661e868ac8e298892d215369ceaced0",
-                "reference": "448a45692661e868ac8e298892d215369ceaced0",
+                "url": "https://api.github.com/repos/zfcampus/zf-content-validation/zipball/aa9b688d0995bab00a3c94fe629891d3581b0ca5",
+                "reference": "aa9b688d0995bab00a3c94fe629891d3581b0ca5",
                 "shasum": ""
             },
             "require": {
@@ -1983,7 +1983,7 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2016-07-26 21:15:44"
+            "time": "2016-08-04 22:27:17"
         },
         {
             "name": "zfcampus/zf-development-mode",
@@ -2912,7 +2912,7 @@
             "source": {
                 "type": "git",
                 "url": "/home/matthew/git/modules/zfcampus/zf-apigility-admin",
-                "reference": "55d8eb61434fdd896f3209f125888dc44a2606e2"
+                "reference": "0398d5f736d76db55c01e9e655d05a296e9c4071"
             },
             "require": {
                 "php": "^5.6 || ^7.0",
@@ -2934,7 +2934,7 @@
                 "zfcampus/zf-apigility-provider": "^1.2",
                 "zfcampus/zf-configuration": "^1.2",
                 "zfcampus/zf-content-negotiation": "^1.2.2",
-                "zfcampus/zf-content-validation": "^1.3.3",
+                "zfcampus/zf-content-validation": "^1.3.4",
                 "zfcampus/zf-hal": "^1.4.2",
                 "zfcampus/zf-mvc-auth": "^1.4.1",
                 "zfcampus/zf-oauth2": "^1.4",
@@ -3012,21 +3012,16 @@
                 "source": "https://github.com/zfcampus/zf-apigility-admin",
                 "issues": "https://github.com/zfcampus/zf-apigility-admin/issues"
             },
-            "time": "2016-08-03 21:37:32"
+            "time": "2016-08-04 22:32:54"
         },
         {
             "name": "zfcampus/zf-apigility-admin-ui",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zfcampus/zf-apigility-admin-ui.git",
-                "reference": "7f650986be84a387d21f28a3944b9c46e64c3d35"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-apigility-admin-ui/zipball/7f650986be84a387d21f28a3944b9c46e64c3d35",
-                "reference": "7f650986be84a387d21f28a3944b9c46e64c3d35",
-                "shasum": ""
+                "type": "path",
+                "url": "/home/matthew/git/modules/zfcampus/zf-apigility-admin-ui",
+                "reference": "fd032f21e0d60960c4f6895fac1e7dd474681c0b",
+                "shasum": null
             },
             "require": {
                 "php": "^5.6 || ^7.0",
@@ -3051,7 +3046,6 @@
                     "Module.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3063,7 +3057,12 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2016-07-27 20:33:13"
+            "support": {
+                "email": "apigility-users@zend.com",
+                "irc": "irc://irc.freenode.net/apigility",
+                "source": "https://github.com/zfcampus/zf-apigility-admin-ui",
+                "issues": "https://github.com/zfcampus/zf-apigility-admin-ui/issues"
+            }
         },
         {
             "name": "zfcampus/zf-asset-manager",
@@ -3219,7 +3218,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "zendframework/zend-component-installer": 20,
-        "zfcampus/zf-apigility-admin": 20
+        "zfcampus/zf-apigility-admin": 20,
+        "zfcampus/zf-apigility-admin-ui": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
