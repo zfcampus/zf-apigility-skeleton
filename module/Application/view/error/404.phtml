@@ -3,8 +3,7 @@
 
 <?php
 if (! empty($this->reason)) :
-
-    $reasonMessage= '';
+    $reasonMessage = '';
     switch ($this->reason) {
         case 'error-controller-cannot-dispatch':
             $reasonMessage = 'The requested controller was unable to dispatch the request.';

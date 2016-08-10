@@ -4,10 +4,10 @@
  * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-return array(
-    'view_manager' => array(
-        'strategies' => array(
+return [
+    'view_manager' => [
+        'strategies' => [
             'ViewJsonStrategy',
-        ),
-    ),
-);
+        ],
+    ],
+];

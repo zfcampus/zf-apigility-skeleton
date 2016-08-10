@@ -4,10 +4,10 @@
  * and overrides the ZF\OAuth2\Service\OAuth2Server to provide the ability to create named
  * OAuth2\Server instances.
  */
-return array(
-    'service_manager' => array(
-        'factories' => array(
+return [
+    'service_manager' => [
+        'factories' => [
             'ZF\OAuth2\Service\OAuth2Server' => 'ZF\MvcAuth\Factory\NamedOAuth2ServerFactory',
-        ),
-    ),
-);
+        ],
+    ],
+];

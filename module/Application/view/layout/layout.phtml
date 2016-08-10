@@ -7,7 +7,7 @@ echo $this->headTitle('Apigility');
 
 echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
 
-echo $this->headLink(array('rel' => 'icon', 'type' => 'image/png', 'href' => $this->basePath('/img/favicon.png')))
+echo $this->headLink(['rel' => 'icon', 'type' => 'image/png', 'href' => $this->basePath('/img/favicon.png')])
     ->prependStylesheet($this->basePath('/zf-apigility/css/main.min.css'))
     ->prependStylesheet($this->basePath('/zf-apigility/css/bootstrap.min.css'));
 
