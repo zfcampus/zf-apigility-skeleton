@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1da29a30e3c2c22905b08cba3c77dd33",
-    "content-hash": "f927485f92cf33f838074c98345cbc5e",
+    "hash": "4fc3ff897e7780438f8908179180c73f",
+    "content-hash": "a2acb7bcc029278cb520bbeed5d5ffa0",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -3040,16 +3040,16 @@
         },
         {
             "name": "zfcampus/zf-asset-manager",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-asset-manager.git",
-                "reference": "29916d6575c323f27ae376cd288e622352ae3c05"
+                "reference": "1ae430e1d004a39b684b407ec83ab382ea1a4261"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-asset-manager/zipball/29916d6575c323f27ae376cd288e622352ae3c05",
-                "reference": "29916d6575c323f27ae376cd288e622352ae3c05",
+                "url": "https://api.github.com/repos/zfcampus/zf-asset-manager/zipball/1ae430e1d004a39b684b407ec83ab382ea1a4261",
+                "reference": "1ae430e1d004a39b684b407ec83ab382ea1a4261",
                 "shasum": ""
             },
             "require": {
@@ -3079,7 +3079,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Composer plugin for copying module assets into application document roots.",
-            "time": "2016-07-26 20:19:23"
+            "time": "2016-08-10 14:57:52"
         },
         {
             "name": "zfcampus/zf-console",
