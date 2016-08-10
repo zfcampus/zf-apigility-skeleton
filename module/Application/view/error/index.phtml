@@ -6,7 +6,7 @@
     <?php if (isset($this->exception) && $this->exception instanceof Exception) : ?>
 <hr/>
 <h2>Additional information:</h2>
-<h3><?= get_class($this->exception); ?></h3>
+<h3><?= get_class($this->exception) ?></h3>
 <dl>
     <dt>File:</dt>
     <dd>
@@ -21,7 +21,7 @@
         <pre class="prettyprint linenums"><?= $this->exception->getTraceAsString() ?></pre>
     </dd>
 </dl>
-        <?php $e = $this->exception->getPrevious(); ?>
+        <?php $e = $this->exception->getPrevious() ?>
         <?php if ($e) : ?>
 <hr/>
 <h2>Previous exceptions:</h2>
@@ -44,8 +44,8 @@
             </dd>
         </dl>
     </li>
-                <?php $e = $e->getPrevious(); ?>
-            <?php endwhile; ?>
+                <?php $e = $e->getPrevious() ?>
+            <?php endwhile ?>
 </ul>
         <?php endif ?>
 
