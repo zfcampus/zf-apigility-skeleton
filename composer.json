@@ -46,7 +46,10 @@
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/"
-        }
+        },
+        "files": [
+            "src/Apigility/constants.php"
+        ]
     },
     "scripts": {
         "development-disable": "zf-development-mode disable",

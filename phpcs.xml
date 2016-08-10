@@ -33,6 +33,7 @@
     <file>module/Application/view/error/404.phtml</file>
     <file>module/Application/view/layout/layout.phtml</file>
     <file>public/index.php</file>
+    <file>src</file>
     <exclude-pattern>config/*.old</exclude-pattern>
     <exclude-pattern>config/development.config.php</exclude-pattern>
 </ruleset>
