@@ -1,8 +1,7 @@
-dev:
+apigility-dev:
   build: .
   dockerfile: Dockerfile-dev
   ports:
    - "8080:80"
   volumes:
    - .:/var/www
-    
