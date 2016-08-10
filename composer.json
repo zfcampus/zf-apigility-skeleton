@@ -43,6 +43,11 @@
         "zfcampus/zf-http-cache": "zfcampus/zf-http-cache ^1.3 to add HTTP caching to your API",
         "zfr/zfr-cors": "zfr/zfr-cors ^1.2 to add CORS support to your API"
     },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "module/Application/src/"
+        }
+    },
     "scripts": {
         "development-disable": "zf-development-mode disable",
         "development-enable": "zf-development-mode enable",
