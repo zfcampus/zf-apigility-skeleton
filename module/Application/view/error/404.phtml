@@ -42,7 +42,7 @@ if (! empty($this->reason)) :
     if (! empty($this->controller_class)
         && $this->controller_class != $this->controller
     ) {
-        echo '(' . sprintf('resolves to %s', $this->escapeHtml($this->controller_class)) . ')';
+        echo sprintf('(resolves to %s)', $this->escapeHtml($this->controller_class));
     }
     ?>
 </dd>
