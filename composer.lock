@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "de00ad4a70da21ffed4aa29add8f0a53",
-    "content-hash": "4cf5f2216f409f4a2e6457b8a7c8f3e2",
+    "hash": "3d2b940b9a3f939eb4b3905bcbbadd2e",
+    "content-hash": "8548e5dcf647384e5c6b33572db74f57",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -1701,16 +1701,16 @@
         },
         {
             "name": "zfcampus/zf-apigility-documentation",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-apigility-documentation.git",
-                "reference": "b4c28f2d942fec7071e146020a0bf10a508e0f1e"
+                "reference": "e5140afdc5cb3d22d28de6061ccc1309cb3b317f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-apigility-documentation/zipball/b4c28f2d942fec7071e146020a0bf10a508e0f1e",
-                "reference": "b4c28f2d942fec7071e146020a0bf10a508e0f1e",
+                "url": "https://api.github.com/repos/zfcampus/zf-apigility-documentation/zipball/e5140afdc5cb3d22d28de6061ccc1309cb3b317f",
+                "reference": "e5140afdc5cb3d22d28de6061ccc1309cb3b317f",
                 "shasum": ""
             },
             "require": {
@@ -1758,7 +1758,7 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2016-08-04 22:55:44"
+            "time": "2016-08-10 19:10:23"
         },
         {
             "name": "zfcampus/zf-apigility-provider",
@@ -2908,16 +2908,16 @@
         },
         {
             "name": "zfcampus/zf-apigility-admin",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-apigility-admin.git",
-                "reference": "d96fcb3128a9467b938ba5585875684ca9c9af7d"
+                "reference": "ee9c0024158e402b2820b54048ff3dc38c006b5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-apigility-admin/zipball/d96fcb3128a9467b938ba5585875684ca9c9af7d",
-                "reference": "d96fcb3128a9467b938ba5585875684ca9c9af7d",
+                "url": "https://api.github.com/repos/zfcampus/zf-apigility-admin/zipball/ee9c0024158e402b2820b54048ff3dc38c006b5c",
+                "reference": "ee9c0024158e402b2820b54048ff3dc38c006b5c",
                 "shasum": ""
             },
             "require": {
@@ -2936,7 +2936,7 @@
                 "zendframework/zend-view": "^2.8.1",
                 "zfcampus/zf-api-problem": "^1.2.1",
                 "zfcampus/zf-apigility": "^1.3",
-                "zfcampus/zf-apigility-admin-ui": "^1.3.3",
+                "zfcampus/zf-apigility-admin-ui": "^1.3.4",
                 "zfcampus/zf-apigility-provider": "^1.2",
                 "zfcampus/zf-configuration": "^1.2",
                 "zfcampus/zf-content-negotiation": "^1.2.2",
@@ -2985,7 +2985,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2016-08-10 16:46:27"
+            "time": "2016-08-10 19:34:06"
         },
         {
             "name": "zfcampus/zf-apigility-admin-ui",
