@@ -1,7 +1,7 @@
-<?php // @codingStandardsIgnoreFile
+<?php
 /**
  * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
+ * @copyright Copyright (c) 2014-2016 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
 /**
@@ -15,7 +15,7 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
     return false;
 }
 
-if (!file_exists('vendor/autoload.php')) {
+if (! file_exists('vendor/autoload.php')) {
     throw new RuntimeException(
         'Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.'
     );
@@ -24,7 +24,7 @@ if (!file_exists('vendor/autoload.php')) {
 // Setup autoloading
 include 'vendor/autoload.php';
 
-if (!defined('APPLICATION_PATH')) {
+if (! defined('APPLICATION_PATH')) {
     define('APPLICATION_PATH', realpath(__DIR__ . '/../'));
 }
 

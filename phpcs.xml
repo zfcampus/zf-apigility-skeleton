@@ -20,6 +20,9 @@
             <property name="ignoreBlankLines" value="false"/>
         </properties>
     </rule>
+    <rule ref="PSR1.Files.SideEffects">
+        <exclude-pattern>public/index.php</exclude-pattern>
+    </rule>
 
     <!-- Paths to check -->
     <file>config</file>
@@ -30,6 +33,6 @@
     <file>module/Application/view/error/404.phtml</file>
     <file>module/Application/view/layout/layout.phtml</file>
     <file>public/index.php</file>
-    <exclude-file>config/*.old</exclude-file>
-    <exclude-file>config/development.config.php</exclude-file>
+    <exclude-pattern>config/*.old</exclude-pattern>
+    <exclude-pattern>config/development.config.php</exclude-pattern>
 </ruleset>
