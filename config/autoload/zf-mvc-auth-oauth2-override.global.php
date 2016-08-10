@@ -7,7 +7,7 @@
 return [
     'service_manager' => [
         'factories' => [
-            'ZF\OAuth2\Service\OAuth2Server' => 'ZF\MvcAuth\Factory\NamedOAuth2ServerFactory',
+            \ZF\OAuth2\Service\OAuth2Server::class => \ZF\MvcAuth\Factory\NamedOAuth2ServerFactory::class,
         ],
     ],
 ];
