@@ -1,6 +1,6 @@
 apigility:
   build: .
-  dockerfile: Dockerfile-dev
+  dockerfile: Dockerfile
   ports:
    - "8080:80"
   volumes:

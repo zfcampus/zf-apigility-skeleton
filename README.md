@@ -164,6 +164,24 @@ The web root is inside the shared directory, which is at `/var/www`; this is
 also the home directory for the vagrant issue, which will be the initial
 directory you land in once you connect via SSH.
 
+The image installs composer during provisioning, meaning you can use it to
+install and update dependencies:
+
+```bash
+# Install dependencies:
+$ vagrant ssh -c 'composer install'
+# Update dependencies:
+$ vagrant ssh -c 'composer update'
+```
+
+You can also manipulate development mode:
+
+```bash
+$ vagrant ssh -c 'composer development-enable'
+$ vagrant ssh -c 'composer development-disable'
+$ vagrant ssh -c 'composer development-status'
+```
+
 > #### Vagrant and VirtualBox
 >
 > The vagrant image is based on ubuntu/xenial64. If you are using VirtualBox as
@@ -176,10 +194,7 @@ For vagrant documentation, please refer to [vagrantup.com](https://www.vagrantup
 
 ### Docker
 
-If you develop or deploy using Docker, we provide both development and production configuration for
-you.
-
-#### Development
+If you develop or deploy using Docker, we provide configuration for you.
 
 Prepare your development environment using [docker compose](https://docs.docker.com/compose/install/):
 
@@ -187,27 +202,34 @@ Prepare your development environment using [docker compose](https://docs.docker.
 $ git clone https://github.com/zfcampus/zf-apigility-skeleton
 $ cd zf-apigility-skeleton
 $ docker-compose build
+# Install dependencies via composer, if you haven't already:
+$ docker-compose run apigility composer install
+# Enable development mode:
+$ docker-compose run apigility composer development-enable
 ```
 
-Start the development environment:
+Start the container:
 
 ```bash
 $ docker-compose up
 ```
 
-Access your editor from `http://localhost:8080/` or `http://<boot2docker ip>:8080/` if on Windows or Mac.
+Access Apigility from `http://localhost:8080/` or `http://<boot2docker ip>:8080/` if on Windows or Mac.
 
-#### Production
+You may also use the provided `Dockerfile` directly if desired.
 
-Use the included [Dockerfile](https://docs.docker.com/reference/builder/) to build an [Apache](http://httpd.apache.org/) container:
+Once installed, you can use the container to update dependencies:
 
 ```bash
-$ docker build -t apighost .
+$ docker-compose run apigility composer update
 ```
 
-Test your container:
+Or to manipulate development mode:
+
 ```bash
-$ docker run -it -p "80:80" apihost
+$ docker-compose run apigility composer development-enable
+$ docker-compose run apigility composer development-disable
+$ docker-compose run apigility composer development-status
 ```
 
 QA Tools

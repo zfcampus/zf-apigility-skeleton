@@ -1,3 +1,26 @@
+#
+# Use this dockerfile to run apigility.
+#
+# Start the server using docker-compose:
+#
+#   docker-compose build
+#   docker-compose up
+#
+# You can install dependencies via the container:
+#
+#   docker-compose run apigility composer install
+#
+# You can manipulate dev mode from the container:
+#
+#   docker-compose run apigility composer development-enable
+#   docker-compose run apigility composer development-disable
+#   docker-compose run apigility composer development-status
+#
+# OR use plain old docker 
+#
+#   docker build -f Dockerfile-dev -t apigility .
+#   docker run -it -p "8080:80" -v $PWD:/var/www apigility
+#
 FROM php:7.0-apache
 
 RUN apt-get update \
@@ -11,8 +34,3 @@ RUN apt-get update \
  && echo "AllowEncodedSlashes On" >> /etc/apache2/apache2.conf
 
 WORKDIR /var/www
-
-COPY . .
-
-RUN chown www-data.www-data /var/www/data/cache \
- && composer install
