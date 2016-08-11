@@ -8,8 +8,8 @@
 #
 # OR use plain old docker 
 #
-#   docker build -f Dockerfile-dev -t apigility-dev .
-#   docker run -it -p "8080:80" -v $PWD:/var/www apigility-dev
+#   docker build -f Dockerfile-dev -t apigility .
+#   docker run -it -p "8080:80" -v $PWD:/var/www apigility
 #
 FROM php:7.0-apache
 

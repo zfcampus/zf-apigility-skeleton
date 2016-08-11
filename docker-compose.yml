@@ -1,4 +1,4 @@
-apigility-dev:
+apigility:
   build: .
   dockerfile: Dockerfile-dev
   ports:
