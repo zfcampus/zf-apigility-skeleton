@@ -164,6 +164,14 @@ The web root is inside the shared directory, which is at `/var/www`; this is
 also the home directory for the vagrant issue, which will be the initial
 directory you land in once you connect via SSH.
 
+> #### Vagrant and VirtualBox on Linux
+>
+> The vagrant image is based on ubuntu/xenial64. If you are using VirtualBox as
+a provider on a Linux host, you will need:
+>
+> - Vagrant 1.8.5 or later
+> - VirtualBox 5.0.26 or later
+
 For vagrant documentation, please refer to [vagrantup.com](https://www.vagrantup.com/)
 
 ### Docker
