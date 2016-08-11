@@ -5,6 +5,7 @@
  */
 
 use Apigility\ConfigWriterDelegatorFactory;
+use ZF\Apigility\Admin\Model\ModulePathSpec;
 use ZF\Configuration\ConfigWriter;
 
 return [
@@ -19,6 +20,6 @@ return [
         'display_exceptions' => true,
     ],
     'zf-apigility-admin' => [
-        'path_spec' => 'psr-4',
+        'path_spec' => ModulePathSpec::PSR_4,
     ],
 ];
