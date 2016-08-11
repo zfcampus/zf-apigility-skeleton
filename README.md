@@ -34,11 +34,11 @@ $ unzip zf-apigility-skeleton-{version}.zip
 ### Via Composer (create-project)
 
 You can use the `create-project` command from [Composer](http://getcomposer.org/)
-to create the project in one go (you need to install [composer.phar](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable)):
+to create the project in one go (you need to install [composer](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable)):
 
 ```bash
-$ curl -s https://getcomposer.org/installer | php --
-$ php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
+$ curl -s https://getcomposer.org/installer | php -- --filename=composer
+$ composer create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
 ```
 
 ### Via Git (clone)
@@ -54,7 +54,7 @@ At this point, you need to use [Composer](https://getcomposer.org/) to install
 dependencies. Assuming you already have Composer:
 
 ```bash
-$ composer.phar install
+$ composer install
 ```
 
 ### All methods
