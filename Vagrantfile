@@ -4,18 +4,43 @@
 VAGRANTFILE_API_VERSION = '2'
 
 @script = <<SCRIPT
+# Fix for https://bugs.launchpad.net/ubuntu/+source/livecd-rootfs/+bug/1561250
+if ! grep -q "ubuntu-xenial" /etc/hosts; then
+    echo "127.0.0.1 ubuntu-xenial" >> /etc/hosts
+fi
+
+# Install dependencies
 add-apt-repository ppa:ondrej/php
 apt-get update
 apt-get install -y apache2 git curl php7.0 php7.0-bcmath php7.0-bz2 php7.0-cli php7.0-curl php7.0-intl php7.0-json php7.0-mbstring php7.0-opcache php7.0-soap php7.0-sqlite3 php7.0-xml php7.0-xsl php7.0-zip libapache2-mod-php7.0
 
-cat /etc/apache2/sites-available/000-default.conf | sed 's!/var/www/html!/var/www/public~\tAllowEncodedSlashes On~~\t<Directory /var/www/public>~\t\tOptions +Indexes +FollowSymLinks~\t\tDirectoryIndex index.php index.html~\t\tOrder allow,deny~\t\tAllow from all~\t\tAllowOverride All~\t</Directory>!g' | tr "~" "\n" > /tmp/000-default.conf
-mv /tmp/000-default.conf /etc/apache2/sites-available/000-default.conf
+# Configure Apache
+echo "<VirtualHost *:80>
+	DocumentRoot /var/www/public
+	AllowEncodedSlashes On
+
+	<Directory /var/www/public>
+		Options +Indexes +FollowSymLinks
+		DirectoryIndex index.php index.html
+		Order allow,deny
+		Allow from all
+		AllowOverride All
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>" > /etc/apache2/sites-available/000-default.conf
 a2enmod rewrite
 service apache2 restart
 
-curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+if [ -e /usr/local/bin/composer ]; then
+    /usr/local/bin/composer self-update
+else
+    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+fi
 
-if ! grep "cd /var/www" /home/ubuntu/.profile > /dev/null; then
+# Reset home directory of vagrant user
+if ! grep -q "cd /var/www" /home/ubuntu/.profile; then
     echo "cd /var/www" >> /home/ubuntu/.profile
 fi
 
