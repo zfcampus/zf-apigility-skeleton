@@ -53,6 +53,7 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "Apigility\\": "src/Apigility/",
             "ApplicationTest\\": "module/Application/test/"
         }
     },

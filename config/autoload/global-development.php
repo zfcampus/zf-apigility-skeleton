@@ -4,7 +4,17 @@
  * @copyright Copyright (c) 2014-2016 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
+use Apigility\ConfigWriterDelegatorFactory;
+use ZF\Configuration\ConfigWriter;
+
 return [
+    'service_manager' => [
+        'delegators' => [
+            ConfigWriter::class => [
+                ConfigWriterDelegatorFactory::class,
+            ],
+        ],
+    ],
     'view_manager' => [
         'display_exceptions' => true,
     ]
