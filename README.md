@@ -18,7 +18,7 @@ has distribution tarballs and zipballs available.
 Untar it:
 
 ```bash
-tar xzf zf-apigility-skeleton-{version}.tgz
+$ tar xzf zf-apigility-skeleton-{version}.tgz
 ```
 
 (Where `{version}` is the version you downloaded.)
@@ -26,7 +26,7 @@ tar xzf zf-apigility-skeleton-{version}.tgz
 Or unzip, if you chose the zipball:
 
 ```bash
-unzip zf-apigility-skeleton-{version}.zip
+$ unzip zf-apigility-skeleton-{version}.zip
 ```
 
 (Where `{version}` is the version you downloaded.)
@@ -37,8 +37,8 @@ You can use the `create-project` command from [Composer](http://getcomposer.org/
 to create the project in one go (you need to install [composer.phar](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable)):
 
 ```bash
-curl -s https://getcomposer.org/installer | php --
-php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
+$ curl -s https://getcomposer.org/installer | php --
+$ php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
 ```
 
 ### Via Git (clone)
@@ -46,15 +46,15 @@ php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/in
 First, clone the repository:
 
 ```bash
-git clone https://github.com/zfcampus/zf-apigility-skeleton.git # optionally, specify the directory in which to clone
-cd path/to/install
+# git clone https://github.com/zfcampus/zf-apigility-skeleton.git # optionally, specify the directory in which to clone
+$ cd path/to/install
 ```
 
 At this point, you need to use [Composer](https://getcomposer.org/) to install
 dependencies. Assuming you already have Composer:
 
 ```bash
-composer.phar install
+$ composer.phar install
 ```
 
 ### All methods
@@ -70,14 +70,16 @@ Now, fire it up! Do one of the following:
 
 - Create a vhost in your web server that points the DocumentRoot to the
   `public/` directory of the project
-- Fire up the built-in web server in PHP (5.4.8+) (**note**: do not use this for
+- Fire up the built-in web server in PHP(**note**: do not use this for
   production!)
 
 In the latter case, do the following:
 
 ```bash
-cd path/to/install
-php -S 0.0.0.0:8080 -ddisplay_errors=0 -t public public/index.php
+$ cd path/to/install
+$ php -S 0.0.0.0:8080 -ddisplay_errors=0 -t public public/index.php
+# OR use the composer alias:
+$ composer serve
 ```
 
 You can then visit the site at http://localhost:8080/ - which will bring up a
@@ -97,7 +99,7 @@ API uses these characters for a number of service endpoints. As such, if you wis
 Admin UI and/or Admin API with Apache, you will need to configure your Apache vhost/project to
 allow encoded slashes:
 
-```apache
+```apacheconf
 AllowEncodedSlashes On
 ```
 
@@ -148,21 +150,19 @@ server first, or if you know how, you can reconfigure the ports in Vagrantfile.
 Assuming you have Vagrant installed and assuming you have no port conflicts, you can bring up the Vagrant machine
 with the standard `up` command:
 
-```
-vagrant up
+```bash
+$ vagrant up
 ```
 
 When the machine comes up, you can ssh to it with the standard ssh forward agent:
 
-```
-vagrant ssh
+```bash
+$ vagrant ssh
 ```
 
-The web root is inside the shared directory, which is at `/vagrant`. Once you've ssh'd into the box, you need to cd:
-
-```
-cd /vagrant
-```
+The web root is inside the shared directory, which is at `/var/www`; this is
+also the home directory for the vagrant issue, which will be the initial
+directory you land in once you connect via SSH.
 
 For vagrant documentation, please refer to [vagrantup.com](https://www.vagrantup.com/)
 
@@ -174,28 +174,59 @@ you.
 #### Development
 
 Prepare your development environment using [docker compose](https://docs.docker.com/compose/install/):
+
 ```bash
-git clone https://github.com/zfcampus/zf-apigility-skeleton
-
-cd zf-apigility-skeleton
-
-docker-compose build
+$ git clone https://github.com/zfcampus/zf-apigility-skeleton
+$ cd zf-apigility-skeleton
+$ docker-compose build
 ```
 
 Start the development environment:
+
 ```bash
-docker-compose up
+$ docker-compose up
 ```
+
 Access your editor from `http://localhost:8080/` or `http://<boot2docker ip>:8080/` if on Windows or Mac.
 
 #### Production
 
 Use the included [Dockerfile](https://docs.docker.com/reference/builder/) to build an [Apache](http://httpd.apache.org/) container:
+
 ```bash
-docker build -t apighost .
+$ docker build -t apighost .
 ```
 
 Test your container:
 ```bash
-docker run -it -p "80:80" apighost
+$ docker run -it -p "80:80" apihost
+```
+
+QA Tools
+--------
+
+The skeleton does not come with any QA tooling by default, but does ship with
+configuration for each of:
+
+- [phpcs](https://github.com/squizlabs/php_codesniffer)
+- [phpunit](https://phpunit.de)
+
+Additionally, it comes with some basic tests for the shipped
+`Application\Controller\IndexController`.
+
+If you want to add these QA tools, execute the following:
+
+```bash
+$ composer require --dev phpunit/phpunit squizlabs/php_codesniffer zendframework/zend-test
+```
+
+We provide aliases for each of these tools in the Composer configuration:
+
+```bash
+# Run CS checks:
+$ composer cs-check
+# Fix CS errors:
+$ composer cs-fix
+# Run PHPUnit tests:
+$ composer test
 ```

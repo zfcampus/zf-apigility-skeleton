@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3d2b940b9a3f939eb4b3905bcbbadd2e",
+    "hash": "4efa9c1b1739277c7af49c7af655813c",
     "content-hash": "8548e5dcf647384e5c6b33572db74f57",
     "packages": [
         {
@@ -346,16 +346,16 @@
         },
         {
             "name": "zendframework/zend-crypt",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-crypt.git",
-                "reference": "ed348e3e87c945759d11edae5316125c3582bc72"
+                "reference": "caadff93c6a5a3d17aab72f026a4a883e33a3e94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-crypt/zipball/ed348e3e87c945759d11edae5316125c3582bc72",
-                "reference": "ed348e3e87c945759d11edae5316125c3582bc72",
+                "url": "https://api.github.com/repos/zendframework/zend-crypt/zipball/caadff93c6a5a3d17aab72f026a4a883e33a3e94",
+                "reference": "caadff93c6a5a3d17aab72f026a4a883e33a3e94",
                 "shasum": ""
             },
             "require": {
@@ -375,8 +375,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev",
-                    "dev-develop": "3.1-dev"
+                    "dev-master": "3.1-dev",
+                    "dev-develop": "3.2-dev"
                 }
             },
             "autoload": {
@@ -393,7 +393,7 @@
                 "crypt",
                 "zf2"
             ],
-            "time": "2016-06-21 18:15:32"
+            "time": "2016-08-11 16:40:18"
         },
         {
             "name": "zendframework/zend-db",
