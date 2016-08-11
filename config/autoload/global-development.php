@@ -17,5 +17,8 @@ return [
     ],
     'view_manager' => [
         'display_exceptions' => true,
-    ]
+    ],
+    'zf-apigility-admin' => [
+        'path_spec' => 'psr-4',
+    ],
 ];
