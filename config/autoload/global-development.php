@@ -22,4 +22,7 @@ return [
     'zf-apigility-admin' => [
         'path_spec' => ModulePathSpec::PSR_4,
     ],
+    'zf-configuration' => [
+        'enable_short_array' => true,
+    ],
 ];
