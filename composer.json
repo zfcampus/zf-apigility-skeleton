@@ -34,8 +34,9 @@
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "^1.1",
-        "zfcampus/zf-apigility-admin": "^1.5.3",
-        "zfcampus/zf-asset-manager": "^1.0.1",
+        "zfcampus/zf-apigility-admin": "^1.5.4",
+        "zfcampus/zf-asset-manager": "^1.1.1",
+        "zfcampus/zf-composer-autoloading": "^1.0",
         "zfcampus/zf-deploy": "^1.2"
     },
     "suggest": {
