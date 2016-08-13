@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "685160c0f2872064505e90b4c8b8f5c9",
+    "hash": "c76301a805a0a94b6c92e3ef390c415f",
     "content-hash": "b1def53ae74600e78fed937c85281236",
     "packages": [
         {
@@ -1808,16 +1808,16 @@
         },
         {
             "name": "zfcampus/zf-configuration",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-configuration.git",
-                "reference": "9bea29e0ac86d7fa7e0cbee13fc75965b0c5aee7"
+                "reference": "51231865e277454595fd9dc9dadb9944a8c96bff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-configuration/zipball/9bea29e0ac86d7fa7e0cbee13fc75965b0c5aee7",
-                "reference": "9bea29e0ac86d7fa7e0cbee13fc75965b0c5aee7",
+                "url": "https://api.github.com/repos/zfcampus/zf-configuration/zipball/51231865e277454595fd9dc9dadb9944a8c96bff",
+                "reference": "51231865e277454595fd9dc9dadb9944a8c96bff",
                 "shasum": ""
             },
             "require": {
@@ -1827,8 +1827,9 @@
                 "zendframework/zend-stdlib": "^2.7.7 || ^3.0.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8 || ^5.0",
-                "squizlabs/php_codesniffer": "^2.3.1"
+                "container-interop/container-interop": "^1.1",
+                "phpunit/phpunit": "^4.8 || ^5.5",
+                "squizlabs/php_codesniffer": "^2.6.2"
             },
             "type": "library",
             "extra": {
@@ -1858,7 +1859,7 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2016-07-13 20:58:45"
+            "time": "2016-08-13 15:17:08"
         },
         {
             "name": "zfcampus/zf-content-negotiation",

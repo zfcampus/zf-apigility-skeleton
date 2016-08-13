@@ -9,13 +9,6 @@ use ZF\Apigility\Admin\Model\ModulePathSpec;
 use ZF\Configuration\ConfigWriter;
 
 return [
-    'service_manager' => [
-        'delegators' => [
-            ConfigWriter::class => [
-                ConfigWriterDelegatorFactory::class,
-            ],
-        ],
-    ],
     'view_manager' => [
         'display_exceptions' => true,
     ],
@@ -24,5 +17,6 @@ return [
     ],
     'zf-configuration' => [
         'enable_short_array' => true,
+        'class_name_scalars' => true,
     ],
 ];
