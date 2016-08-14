@@ -16,7 +16,6 @@ return [
     'Zend\Router',
     'Zend\Validator',
     'ZF\Apigility',
-    'ZF\Apigility\Provider',
     'ZF\Apigility\Documentation',
     'ZF\ApiProblem',
     'ZF\Configuration',
