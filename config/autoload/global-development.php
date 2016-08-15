@@ -4,9 +4,7 @@
  * @copyright Copyright (c) 2014-2016 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-use Apigility\ConfigWriterDelegatorFactory;
 use ZF\Apigility\Admin\Model\ModulePathSpec;
-use ZF\Configuration\ConfigWriter;
 
 return [
     'view_manager' => [
