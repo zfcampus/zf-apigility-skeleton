@@ -86,12 +86,6 @@ You can then visit the site at http://localhost:8080/ - which will bring up a
 welcome page and the ability to visit the dashboard in order to create and
 inspect your APIs.
 
-### NOTE ABOUT USING THE PHP BUILT-IN WEB SERVER
-
-PHP's built-in web server did not start supporting the `PATCH` HTTP method until
-5.4.8. Since the admin API makes use of this HTTP method, you must use a version
-&gt;= 5.4.8 when using the built-in web server.
-
 ### NOTE ABOUT USING APACHE
 
 Apache forbids the character sequences `%2F` and `%5C` in URI paths. However, the Apigility Admin
