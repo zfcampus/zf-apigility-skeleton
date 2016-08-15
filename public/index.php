@@ -1,8 +1,11 @@
-<?php // @codingStandardsIgnoreFile
+<?php
 /**
  * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
+ * @copyright Copyright (c) 2014-2016 Zend Technologies USA Inc. (http://www.zend.com)
  */
+
+use Zend\Stdlib\ArrayUtils;
+use ZF\Apigility\Application;
 
 /**
  * This makes our life easier when dealing with paths. Everything is relative
@@ -15,37 +18,26 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
     return false;
 }
 
-if (!file_exists('vendor/autoload.php')) {
+if (! file_exists('vendor/autoload.php')) {
     throw new RuntimeException(
-        'Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.'
+        'Unable to load application.' . PHP_EOL
+        . '- Type `composer install` if you are developing locally.' . PHP_EOL
+        . '- Type `vagrant ssh -c \'composer install\'` if you are using Vagrant.' . PHP_EOL
+        . '- Type `docker-compose run apigility composer install` if you are using Docker.'
     );
 }
 
 // Setup autoloading
 include 'vendor/autoload.php';
 
-if (!defined('APPLICATION_PATH')) {
-    define('APPLICATION_PATH', realpath(__DIR__ . '/../'));
-}
+$appConfig = include 'config/application.config.php';
 
-$appConfig = include APPLICATION_PATH . '/config/application.config.php';
-
-if (file_exists(APPLICATION_PATH . '/config/development.config.php')) {
-    $appConfig = Zend\Stdlib\ArrayUtils::merge($appConfig, include APPLICATION_PATH . '/config/development.config.php');
-}
-
-// Some OS/Web Server combinations do not glob properly for paths unless they
-// are fully qualified (e.g., IBM i). The following prefixes the default glob
-// path with the value of the current working directory to ensure configuration
-// globbing will work cross-platform.
-if (isset($appConfig['module_listener_options']['config_glob_paths'])) {
-    foreach ($appConfig['module_listener_options']['config_glob_paths'] as $index => $path) {
-        if ($path !== 'config/autoload/{,*.}{global,local}.php') {
-            continue;
-        }
-        $appConfig['module_listener_options']['config_glob_paths'][$index] = getcwd() . '/' . $path;
-    }
+if (file_exists('config/development.config.php')) {
+    $appConfig = ArrayUtils::merge(
+        $appConfig,
+        include 'config/development.config.php'
+    );
 }
 
 // Run the application!
-ZF\Apigility\Application::init($appConfig)->run();
+Application::init($appConfig)->run();

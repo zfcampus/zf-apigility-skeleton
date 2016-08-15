@@ -1,36 +1,42 @@
-<?php echo $this->doctype(); ?>
+<?= $this->doctype() ?>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 <?php
-    echo $this->headTitle('Apigility');
-    echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
-    echo $this->headLink(array('rel' => 'icon', 'type' => 'image/png', 'href' => $this->basePath('/img/favicon.png')))
-        ->prependStylesheet($this->basePath('/zf-apigility/css/main.min.css'))
-        ->prependStylesheet($this->basePath('/zf-apigility/css/bootstrap.min.css'));
-    echo $this->headScript()
-        ->prependFile($this->basePath('/zf-apigility/js/bootstrap.min.js'))
-        ->prependFile($this->basePath('/zf-apigility/js/jquery.min.js'));
+echo $this->headTitle('Apigility');
+
+echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
+
+echo $this->headLink(['rel' => 'icon', 'type' => 'image/png', 'href' => $this->basePath('/img/favicon.png')])
+    ->prependStylesheet($this->basePath('/zf-apigility/css/main.min.css'))
+    ->prependStylesheet($this->basePath('/zf-apigility/css/bootstrap.min.css'));
+
+echo $this->headScript()
+    ->prependFile($this->basePath('/zf-apigility/js/bootstrap.min.js'))
+    ->prependFile($this->basePath('/zf-apigility/js/jquery.min.js'));
 ?>
-    </head>
-    <body>
-        <div class="container">
-            <?php echo $this->content; ?>
-        </div>
-        <footer>
-            <hr>
-            <div class="container center-block">
-              <div class="row">
-                <div class="col-sm-6"><p class="pull-left">
-                    &copy; Copyright 2013 - <?php echo date('Y') ?>
-                    by <a href="http://www.zend.com">Zend Technologies</a> Ltd.
-                </p></div>
-                <div class="col-sm-6"><p class="pull-right">
-                    For more information <a href="https://apigility.org">apigility.org</a>
-                </p></div>
-              </div>
+</head>
+<body>
+    <div class="container">
+        <?= $this->content ?>
+    </div>
+    <footer>
+        <hr>
+        <div class="container center-block"><div class="row">
+            <div class="col-sm-4">
+                &copy; Copyright 2013 - <?= date('Y') ?>
+                by <a href="http://www.zend.com">Zend Technologies</a> Ltd.
             </div>
-        </footer>
-        <?php echo $this->inlineScript() ?>
-    </body>
+
+            <div class="col-sm-4"><p class="center-block">
+                Apigility version <strong><?= \Apigility\VERSION ?></strong>
+            </p></div>
+
+            <div class="col-sm-4"><p class="pull-right">
+                For more information <a href="https://apigility.org">apigility.org</a>
+            </p></div>
+        </div></div>
+    </footer>
+    <?= $this->inlineScript() ?>
+</body>
 </html>
