@@ -47,15 +47,15 @@
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/"
-        },
-        "files": [
-            "src/Apigility/constants.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
             "ApplicationTest\\": "module/Application/test/"
-        }
+        },
+        "files": [
+            "src/Apigility/constants.php"
+        ]
     },
     "scripts": {
         "cs-check": "phpcs",
