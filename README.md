@@ -62,8 +62,8 @@ $ composer install
 Once you have the basic installation, you need to put it in development mode:
 
 ```bash
-cd path/to/install
-php public/index.php development enable # put the skeleton in development mode
+$ cd path/to/install
+$ composer development-enable
 ```
 
 Now, fire it up! Do one of the following:
