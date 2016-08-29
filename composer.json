@@ -40,10 +40,10 @@
         "zfcampus/zf-deploy": "^1.2"
     },
     "suggest": {
+        "zendframework/zend-mvc-console": "^1.1 for its usage in zend-mvc v3",
         "zfcampus/zf-apigility-doctrine": "zfcampus/zf-apigility-doctrine ^2.1 to create Doctrine-Connected REST services",
         "zfcampus/zf-http-cache": "zfcampus/zf-http-cache ^1.3 to add HTTP caching to your API",
-        "zfr/zfr-cors": "zfr/zfr-cors ^1.2 to add CORS support to your API",
-        "zendframework/zend-mvc-console": "^1.1 for its usage in zend-mvc v3"
+        "zfr/zfr-cors": "zfr/zfr-cors ^1.2 to add CORS support to your API"
     },
     "autoload": {
         "psr-4": {
