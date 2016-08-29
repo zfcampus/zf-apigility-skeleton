@@ -31,7 +31,7 @@
         "zfcampus/zf-apigility": "^1.3",
         "zfcampus/zf-apigility-documentation": "^1.2.2",
         "zfcampus/zf-asset-manager": "^1.1.1",
-        "zfcampus/zf-composer-autoloading": "^1.0"
+        "zfcampus/zf-composer-autoloading": "^1.0",
         "zfcampus/zf-development-mode": "^3.0"
     },
     "require-dev": {
