@@ -12,6 +12,7 @@ return [
     'Zend\Filter',
     'Zend\Hydrator',
     'Zend\InputFilter',
+    'Zend\Mvc\Console',
     'Zend\Paginator',
     'Zend\Router',
     'Zend\Validator',
