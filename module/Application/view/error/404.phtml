@@ -53,7 +53,7 @@ if (! empty($this->reason)) :
 <?php if (! empty($this->display_exceptions)) : ?>
 
     <?php if (isset($this->exception)
-        && ($this->exception instanceof \Exception || $this->exception instanceof \Error)) : ?>
+        && ($this->exception instanceof \Throwable || $this->exception instanceof \Exception)) : ?>
 <hr/>
 <h2>Additional information:</h2>
 <h3><?= get_class($this->exception) ?></h3>
