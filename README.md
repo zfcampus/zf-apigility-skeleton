@@ -178,7 +178,7 @@ $ vagrant ssh -c 'composer development-status'
 
 > #### Vagrant and VirtualBox
 >
-> The vagrant image is based on ubuntu/xenial64. If you are using VirtualBox as
+> The vagrant image is based on `bento/ubuntu-16.04`. If you are using VirtualBox as
 > a provider, you will need:
 >
 > - Vagrant 1.8.5 or later
