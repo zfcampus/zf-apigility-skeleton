@@ -46,29 +46,43 @@ For sensitive email communications, please use
 
 First, use [Composer](https://getcomposer.org) to install all dependencies:
 
-```console
+```bash
 $ composer install
+```
+
+Make sure that `zendframework/zend-test` is installed:
+
+```bash
+$ composer require --dev zendframework/zend-test
 ```
 
 To run tests:
 
-```console
+```bash
 $ composer test
 ```
 
 ## CODING STANDARDS
 
-While Apigility uses Zend Framework 2 coding standards, in practice, we verify
-against [PSR-2](http://www.php-fig.org/psr/psr-2/). To check for CS issues:
+While Apigility uses Zend Framework coding standards, in practice, we verify
+against [PSR-2](http://www.php-fig.org/psr/psr-2/).
 
-```console
+First, ensure you've installed dependencies via composer:
+
+```bash
+$ composer require --dev squizlabs/php_codesniffer
+```
+
+To check for CS issues:
+
+```bash
 $ composer cs-check
 ```
 
 This will report CS issues. Alternately, you can have most errors automatically
 fixed as well:
 
-```console
+```bash
 $ composer cs-fix
 ```
 
