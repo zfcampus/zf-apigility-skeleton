@@ -2909,16 +2909,16 @@
         },
         {
             "name": "zfcampus/zf-apigility-admin",
-            "version": "1.5.8",
+            "version": "1.5.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-apigility-admin.git",
-                "reference": "496b5b8eebe221d0ca469755c140f94b1ae8ff51"
+                "reference": "c4f48c44aecaac5a8fa5ff38086d710367f2c4e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-apigility-admin/zipball/496b5b8eebe221d0ca469755c140f94b1ae8ff51",
-                "reference": "496b5b8eebe221d0ca469755c140f94b1ae8ff51",
+                "url": "https://api.github.com/repos/zfcampus/zf-apigility-admin/zipball/c4f48c44aecaac5a8fa5ff38086d710367f2c4e6",
+                "reference": "c4f48c44aecaac5a8fa5ff38086d710367f2c4e6",
                 "shasum": ""
             },
             "require": {
@@ -2986,7 +2986,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2016-10-11 16:12:20"
+            "time": "2016-10-12 15:48:48"
         },
         {
             "name": "zfcampus/zf-apigility-admin-ui",
