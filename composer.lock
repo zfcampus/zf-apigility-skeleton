@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f9e3960164e8d557bfe9e94d312c19b8",
-    "content-hash": "7883630c98e94c28ec83e2a4b07312fb",
+    "hash": "a1bc6674a3e55fb5fc93a66d352e74b2",
+    "content-hash": "39d03a5a2026a24c3fc11849f91063b7",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -250,12 +250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-component-installer.git",
-                "reference": "f6d41a4f311af90bb0a97c8b53e3a636a1a15288"
+                "reference": "ffe57bf273970ed2b903b8495dad7bd642cf6f34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-component-installer/zipball/f6d41a4f311af90bb0a97c8b53e3a636a1a15288",
-                "reference": "f6d41a4f311af90bb0a97c8b53e3a636a1a15288",
+                "url": "https://api.github.com/repos/zendframework/zend-component-installer/zipball/ffe57bf273970ed2b903b8495dad7bd642cf6f34",
+                "reference": "ffe57bf273970ed2b903b8495dad7bd642cf6f34",
                 "shasum": ""
             },
             "require": {
@@ -267,7 +267,7 @@
                 "mikey179/vfsstream": "^1.6",
                 "phpunit/phpunit": "^4.7",
                 "roave/security-advisories": "dev-master",
-                "squizlabs/php_codesniffer": "^2.5"
+                "squizlabs/php_codesniffer": "^2.7"
             },
             "type": "composer-plugin",
             "extra": {
@@ -286,7 +286,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Composer plugin for automating component registration in zend-mvc and Expressive applications",
-            "time": "2016-10-11 17:05:05"
+            "time": "2016-10-17 13:35:46"
         },
         {
             "name": "zendframework/zend-config",
