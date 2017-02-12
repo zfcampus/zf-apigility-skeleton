@@ -12,6 +12,7 @@ return [
     'Zend\Filter',
     'Zend\Hydrator',
     'Zend\InputFilter',
+    //'Zend\Mvc\Console', // activate it if you use zend-mvc v3
     'Zend\Paginator',
     'Zend\Router',
     'Zend\Validator',
