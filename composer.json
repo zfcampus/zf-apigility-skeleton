@@ -37,7 +37,8 @@
         "zfcampus/zf-apigility-admin": "^1.5.9",
         "zfcampus/zf-asset-manager": "^1.1.1",
         "zfcampus/zf-composer-autoloading": "^1.0",
-        "zfcampus/zf-deploy": "^1.2"
+        "zfcampus/zf-deploy": "^1.2",
+        "zendframework/zend-test": "^3.0.1"
     },
     "suggest": {
         "zfcampus/zf-apigility-doctrine": "zfcampus/zf-apigility-doctrine ^2.1 to create Doctrine-Connected REST services",
