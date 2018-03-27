@@ -1,7 +1,7 @@
 {
     "name": "zfcampus/zf-apigility-skeleton",
     "description": "Skeleton Application for Apigility",
-    "type": "library",
+    "type": "project",
     "license": "BSD-3-Clause",
     "keywords": [
         "api",
@@ -11,10 +11,11 @@
     ],
     "homepage": "http://apigility.org/",
     "support": {
-        "email": "apigility-users@zend.com",
-        "irc": "irc://irc.freenode.net/apigility",
+        "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues",
         "source": "https://github.com/zfcampus/zf-apigility-skeleton",
-        "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
+        "rss": "https://github.com/zfcampus/zf-apigility-skeleton/releases.atom",
+        "slack": "https://zendframework-slack.herokuapp.com",
+        "forum": "https://discourse.zendframework.com/c/questions/apigility"
     },
     "config": {
         "process-timeout": 5000
@@ -27,16 +28,16 @@
     },
     "require": {
         "php": "^5.6 || ^7.0",
-        "zendframework/zend-component-installer": "^1.0 || ^0.5 || ^1.0.0-dev@dev",
+        "zendframework/zend-component-installer": "^1.1.1 || ^2.1.1",
         "zfcampus/zf-apigility": "^1.3",
         "zfcampus/zf-apigility-documentation": "^1.2.3",
-        "zfcampus/zf-development-mode": "^3.0"
+        "zfcampus/zf-development-mode": "^3.1"
     },
     "require-dev": {
-        "zendframework/zend-developer-tools": "^1.1",
-        "zfcampus/zf-apigility-admin": "^1.5.9",
-        "zfcampus/zf-asset-manager": "^1.1.1",
-        "zfcampus/zf-composer-autoloading": "^1.0",
+        "zendframework/zend-developer-tools": "^1.1.1",
+        "zfcampus/zf-apigility-admin": "^1.5.13",
+        "zfcampus/zf-asset-manager": "^1.2",
+        "zfcampus/zf-composer-autoloading": "^1.1.1 || ^2.0",
         "zfcampus/zf-deploy": "^1.2"
     },
     "suggest": {
@@ -63,7 +64,8 @@
         "development-disable": "zf-development-mode disable",
         "development-enable": "zf-development-mode enable",
         "development-status": "zf-development-mode status",
-        "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php",
+        "post-create-project-cmd": ["@development-enable"],
+        "serve": "php -S 0.0.0.0:8080 -t public/",
         "test": "phpunit"
     }
 }
