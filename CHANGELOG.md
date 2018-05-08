@@ -6,7 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
-- Nothing.
+- [#159](https://github.com/zfcampus/zf-apigility-skeleton/pull/159) adds a development requirement on zendframework/zend-test, ensuring users
+  have the ability to run existing unit tests, as well as write and execute new ones out of the box.
 
 ### Changed
 
