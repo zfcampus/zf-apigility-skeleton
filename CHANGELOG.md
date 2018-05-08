@@ -11,6 +11,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Changed
 
+- [#164](https://github.com/zfcampus/zf-apigility-skeleton/pull/164) updates all dependencies to versions that will work with PHP 7.2, where possible.
+
 - [#154](https://github.com/zfcampus/zf-apigility-skeleton/pull/154) modifies the `config/autoload/.gitignore` rules to omit `*.local-development.php` files.
 
 ### Deprecated
