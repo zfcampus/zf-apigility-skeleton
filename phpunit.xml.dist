@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit
-    colors="true"
-    bootstrap="./vendor/autoload.php">
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true">
     <testsuites>
         <testsuite name="zf-apigility-skeleton">
             <directory>./module/Application/test</directory>
         </testsuite>
     </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./module/Application/src</directory>
+        </whitelist>
+    </filter>
 </phpunit>
