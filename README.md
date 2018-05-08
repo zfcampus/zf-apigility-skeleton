@@ -229,19 +229,15 @@ $ docker-compose run apigility composer development-status
 QA Tools
 --------
 
-The skeleton does not come with any QA tooling by default, but does ship with
-configuration for each of:
-
-- [phpcs](https://github.com/squizlabs/php_codesniffer)
-- [phpunit](https://phpunit.de)
-
-Additionally, it comes with some basic tests for the shipped
+The skeleton ships with minimal QA tooling by default, including
+zendframework/zend-test. We supply basic tests for the shipped
 `Application\Controller\IndexController`.
 
-If you want to add these QA tools, execute the following:
+We also ship with configuration for [phpcs](https://github.com/squizlabs/php_codesniffer).
+If you wish to add this QA tool, execute the following:
 
 ```bash
-$ composer require --dev phpunit/phpunit squizlabs/php_codesniffer zendframework/zend-test
+$ composer require --dev squizlabs/php_codesniffer
 ```
 
 We provide aliases for each of these tools in the Composer configuration:
