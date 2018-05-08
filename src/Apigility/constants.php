@@ -6,4 +6,4 @@
 
 namespace Apigility;
 
-const VERSION = '1.5.0dev';
+const VERSION = '1.5.1dev';
