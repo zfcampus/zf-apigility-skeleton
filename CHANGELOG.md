@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.5.1 - TBD
+## 1.5.1 - 2018-08-15
 
 ### Added
 
@@ -22,7 +22,20 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
-- Nothing.
+- [#165](https://github.com/zfcampus/zf-apigility-skeleton/pull/165) updates the `composer.lock` by running `composer install` using a
+  PHP 5.6 release.  This was done as the 1.5.0 release was made using a PHP 7.1+
+  binary, and thus installed versions of dependencies that were compatible with
+  those release - but not with 5.6.  Once a release is made with this patch,
+  users on PHP 5.6 will be able to install the skeleton again.
+  
+  However, this means that PHP 7.1+ users will need to execute the following
+  after an initial skeleton install in order to get newer versions of libraries
+  compatible with 7.1:
+  
+  ```bash
+  $ rm -Rf composer.lock vendor
+  $ composer install
+  ```
 
 ## 1.5.0 - 2018-05-08
 
