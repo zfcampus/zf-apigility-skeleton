@@ -24,7 +24,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 - Nothing.
 
-## 1.5.2 - TBD
+## 1.5.2 - 2019-01-09
 
 ### Added
 
@@ -44,7 +44,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
-- Nothing.
+- [#168](https://github.com/zfcampus/zf-apigility-skeleton/pull/168) fixes file permissions of the `/var/www` folder when using Vagrant,
+  setting them to the `www-data` user.
 
 ## 1.5.1 - 2018-08-15
 
