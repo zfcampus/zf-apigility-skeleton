@@ -1,6 +1,10 @@
 Apigility Skeleton Application
 ==============================
 
+> ## Repository abandoned 2019-12-31
+>
+> This repository has moved to laminas-api-tools/api-tools-skeleton.
+
 Requirements
 ------------
 
